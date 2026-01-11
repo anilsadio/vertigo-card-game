@@ -10,7 +10,8 @@ namespace Gameplay.Data.Inventory
     }
     public enum CurrencyType
     {
-        Coin = 0
+        Coin = 0,
+        Money = 1
     }
     public enum ItemPointType
     {

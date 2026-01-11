@@ -17,5 +17,7 @@ namespace Gameplay.Data.Inventory
     {
         public virtual InventoryItemID ID => itemType.ToID();
         public InventoryItemType itemType;
+        public string ItemName;
+        public string ItemKey;
     }
 }

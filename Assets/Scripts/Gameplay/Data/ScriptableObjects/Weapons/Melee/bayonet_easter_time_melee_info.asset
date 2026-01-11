@@ -10,9 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c9e239a022f05f14aaa220b50ab3f0cd, type: 3}
-  m_Name: bayonet_meleem_easter_time_info
+  m_Name: bayonet_easter_time_melee_info
   m_EditorClassIdentifier: 
   itemType: 1
+  ItemName: Bayonet Easter Time
+  ItemKey: bayonet_easter_time_melee
   <Icons>k__BackingField:
   - IconType: 0
     Icon: {fileID: 21300000, guid: 763fc4dbf4ed2c44c876ad9c2e35424c, type: 3}

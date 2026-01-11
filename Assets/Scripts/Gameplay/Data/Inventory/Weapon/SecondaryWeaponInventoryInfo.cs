@@ -1,4 +1,3 @@
-using Gameplay.Data.Inventory.Weapon;
 using UnityEngine;
 
 namespace Gameplay.Data.Inventory.Weapon
