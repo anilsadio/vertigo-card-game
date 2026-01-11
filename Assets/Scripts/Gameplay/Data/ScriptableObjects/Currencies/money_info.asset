@@ -13,7 +13,11 @@ MonoBehaviour:
   m_Name: money_info
   m_EditorClassIdentifier: 
   itemType: 0
-  ItemName: 
-  ItemKey: 
-  <Icons>k__BackingField: []
+  ItemName: Money
+  ItemKey: money
+  <Icons>k__BackingField:
+  - IconType: 0
+    Icon: {fileID: 21300000, guid: af2f1f9039a3bac46a6fdf8674ad7b39, type: 3}
+  - IconType: 1
+    Icon: {fileID: 21300000, guid: af2f1f9039a3bac46a6fdf8674ad7b39, type: 3}
   CurrencyType: 1
