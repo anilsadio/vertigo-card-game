@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b3b7c3e20bcb1845a80af7b6e4a1e92, type: 3}
+  m_Name: molotov_tactical_utility_info
+  m_EditorClassIdentifier: 
+  itemType: 2
+  ItemName: Molotov
+  ItemKey: molotov_tactical_utility
+  <Icons>k__BackingField:
+  - IconType: 0
+    Icon: {fileID: 21300000, guid: 2c9162eb482ab4a4d835a7ffbfbd28d0, type: 3}
+  - IconType: 1
+    Icon: {fileID: 21300000, guid: 2c9162eb482ab4a4d835a7ffbfbd28d0, type: 3}
+  UtilityType: 2
+  Tier: 1
+  UnlockLevel: 0
