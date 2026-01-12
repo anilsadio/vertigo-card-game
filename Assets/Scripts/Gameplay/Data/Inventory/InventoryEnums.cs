@@ -15,8 +15,13 @@ namespace Gameplay.Data.Inventory
     }
     public enum ItemPointType
     {
-        WeaponPoint = 0,
-        ArmorPoint = 1,
+        RiflePoint = 0,
+        ShotgunPoint = 1,
+        SmgPoint = 2,
+        SniperPoint = 3,
+        PistolPoint = 4,
+        MeleePoint = 5,
+        ArmorPoint = 6,
     }
     public enum WeaponCategory
     {
@@ -24,24 +29,27 @@ namespace Gameplay.Data.Inventory
         Secondary = 1,
         Melee = 2,
     }
-    public enum PrimaryWeaponType
+    public enum WeaponType
     {
         Rifle = 0,
         Shotgun = 1,
         Smg = 2,
         Sniper = 3,
-        Special = 4
+        Pistol = 4,
+        Melee = 5,
+        Special = 6
     }
-    public enum SecondaryWeaponType
+
+    public enum WeaponName
     {
-        Pistol = 0,
-        Special = 1
-    }
-    public enum MeleeWeaponType
-    {
-        Knife = 0,
-        Axe = 1,
-        Special = 2
+        BayonetSummerVice = 0,
+        Knife = 1,
+        Galil = 2,
+        P90 = 3,
+        Mag7 = 4,
+        Xm = 5,
+        Awm = 6,
+        BayonetEasterTime = 7
     }
     public enum UtilityType
     {
@@ -49,12 +57,28 @@ namespace Gameplay.Data.Inventory
         Explosive = 1,
         Tactical= 2
     }
+
+    public enum UtilityName
+    {
+        M26 = 0,
+        M67 = 1,
+        Neurostim = 2,
+        Regenerator = 3,
+        Molotov = 4
+    }
     public enum ArmorType
     {
         Chest = 0,
         Helmet = 1,
         Boots = 2,
         Gloves = 3
+    }
+
+    public enum ArmorName
+    {
+        Rayban = 0,
+        BunnyHat = 1,
+        HalloweenPumpkin = 2
     }
 
     public enum InventoryIconType

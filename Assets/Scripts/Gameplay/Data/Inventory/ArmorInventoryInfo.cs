@@ -1,4 +1,6 @@
 using System.Collections.Generic;
+using Gameplay.Data.Interfaces;
+using Gameplay.Data.Utils;
 using UnityEngine;
 
 namespace Gameplay.Data.Inventory
@@ -8,7 +10,8 @@ namespace Gameplay.Data.Inventory
     public class ArmorInventoryInfo : InventoryItemInfo<InventoryItemIcon>
     {
         [field: SerializeField] protected override List<InventoryItemIcon> Icons { get; set; }
-        
+        public override InventoryItemID ID => itemType.ToID(ArmorName);
+        public ArmorName ArmorName;
         public int Tier;
         public int UnlockPointAmount;
         public int UnlockLevel;

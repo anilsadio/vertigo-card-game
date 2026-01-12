@@ -10,14 +10,24 @@ namespace Gameplay.Data.Inventory
         where TIcon : InventoryItemIcon
     {
         protected abstract List<TIcon> Icons { get; set; }
+        public override Sprite GetIcon(InventoryIconType iconType)
+        {
+            var icon = Icons.Find(target => target.IconType == iconType);
+            
+            if (icon == null && Icons.Count > 0) 
+                return Icons[0].Icon;
+            
+            return icon.Icon;
+        }
     }
     
     [System.Serializable]
     public abstract class BaseInventoryItemInfo : ScriptableObject
     {
-        public virtual InventoryItemID ID => itemType.ToID();
+        public virtual InventoryItemID ID => itemType.ToID(ItemName);
         public InventoryItemType itemType;
         public string ItemName;
-        public string ItemKey;
+        
+        public abstract Sprite GetIcon(InventoryIconType iconType);
     }
 }
