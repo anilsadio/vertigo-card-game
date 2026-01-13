@@ -31,5 +31,7 @@ namespace Gameplay.Data.Rewards
         Armor_Helmet_Rayban = 4000,
         Armor_Helmet_BunnyHat = 4001,
         Armor_Helmet_HalloweenPumpkin = 4002,
+        
+        Bomb = 5000
     }
 }

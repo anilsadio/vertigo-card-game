@@ -28,6 +28,6 @@ namespace Gameplay.Data.Inventory
         public InventoryItemType itemType;
         public string ItemName;
         
-        public abstract Sprite GetIcon(InventoryIconType iconType);
+        public abstract Sprite GetIcon(InventoryIconType iconType = InventoryIconType.GameIcon);
     }
 }

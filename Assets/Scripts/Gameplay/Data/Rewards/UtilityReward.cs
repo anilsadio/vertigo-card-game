@@ -1,4 +1,6 @@
+using Gameplay.Data.Interfaces;
 using Gameplay.Data.Inventory;
+using Gameplay.Data.Utils;
 using UnityEngine;
 
 namespace Gameplay.Data.Rewards
@@ -7,12 +9,9 @@ namespace Gameplay.Data.Rewards
     
     public class UtilityReward : Reward
     {
+        public override InventoryItemID ID => itemType.ToID(UtilityName);
+        
         public UtilityType UtilityType;
         public UtilityName UtilityName;
-
-        public override BaseInventoryItemInfo GetInfo()
-        {
-            throw new System.NotImplementedException();
-        }
     }
 }

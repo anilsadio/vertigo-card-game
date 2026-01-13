@@ -2,6 +2,7 @@ namespace Gameplay.Data.Inventory
 {
     public enum InventoryItemType
     {
+        FailBomb = -1,
         Currency = 0,
         Weapon = 1,
         Utility = 2,
