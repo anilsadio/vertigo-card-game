@@ -21,7 +21,7 @@ MonoBehaviour:
     Icon: {fileID: 21300000, guid: dc1a287c180f87240aace36bffdd7541, type: 3}
   WeaponCategory: 2
   WeaponType: 5
-  WeaponName: 0
+  WeaponName: 7
   Tier: 1
   UnlockPoint: 0
   UnlockLevel: 0

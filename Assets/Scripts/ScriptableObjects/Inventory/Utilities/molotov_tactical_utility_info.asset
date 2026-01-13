@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemType: 2
   ItemName: Molotov
-  ItemKey: molotov_tactical_utility
   <Icons>k__BackingField:
   - IconType: 0
     Icon: {fileID: 21300000, guid: 2c9162eb482ab4a4d835a7ffbfbd28d0, type: 3}
   - IconType: 1
     Icon: {fileID: 21300000, guid: 2c9162eb482ab4a4d835a7ffbfbd28d0, type: 3}
   UtilityType: 2
+  UtilityName: 4
   Tier: 1
   UnlockLevel: 0

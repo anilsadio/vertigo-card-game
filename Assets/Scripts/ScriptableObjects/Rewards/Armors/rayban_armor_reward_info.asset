@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 637160e25c6a4e2498d099b1cadd18ef, type: 3}
   m_Name: rayban_armor_reward_info
   m_EditorClassIdentifier: 
-  ItemType: 3
   RewardType: 4000
+  itemType: 3
   ArmorType: 1
   ArmorName: 0

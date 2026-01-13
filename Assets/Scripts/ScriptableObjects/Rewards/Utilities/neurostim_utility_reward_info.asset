@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef413bb703c829745a0934caf89aa827, type: 3}
   m_Name: neurostim_utility_reward_info
   m_EditorClassIdentifier: 
-  ItemType: 2
   RewardType: 3002
+  itemType: 2
   UtilityType: 0
   UtilityName: 2

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbf71097240ed8742be94393b42cc3d9, type: 3}
   m_Name: xm_weapon_reward_info
   m_EditorClassIdentifier: 
-  ItemType: 1
   RewardType: 1002
+  itemType: 1
   WeaponType: 1
   WeaponName: 5

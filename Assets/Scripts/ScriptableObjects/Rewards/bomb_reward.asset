@@ -9,10 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef413bb703c829745a0934caf89aa827, type: 3}
-  m_Name: m67_utility_reward_info
+  m_Script: {fileID: 11500000, guid: 464358e08c0499542be8da6303a20722, type: 3}
+  m_Name: bomb_reward
   m_EditorClassIdentifier: 
-  RewardType: 3001
-  itemType: 2
-  UtilityType: 1
-  UtilityName: 1
+  RewardType: 5000
+  itemType: -1

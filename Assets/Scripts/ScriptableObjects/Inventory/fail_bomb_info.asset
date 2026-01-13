@@ -9,10 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef413bb703c829745a0934caf89aa827, type: 3}
-  m_Name: m67_utility_reward_info
+  m_Script: {fileID: 11500000, guid: 7424badf6adf8b240aa5e17c0a47a0e5, type: 3}
+  m_Name: fail_bomb_info
   m_EditorClassIdentifier: 
-  RewardType: 3001
-  itemType: 2
-  UtilityType: 1
-  UtilityName: 1
+  itemType: -1
+  ItemName: Bomb
+  <Icons>k__BackingField:
+  - IconType: 0
+    Icon: {fileID: 21300000, guid: 323a93d96d9f0f94fb88ac7236803b64, type: 3}

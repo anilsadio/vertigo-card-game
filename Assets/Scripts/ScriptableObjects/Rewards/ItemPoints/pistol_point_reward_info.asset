@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5e7a86ab64178941b56b767a5dcb3e4, type: 3}
   m_Name: pistol_point_reward_info
   m_EditorClassIdentifier: 
-  ItemType: 4
   RewardType: 2005
+  itemType: 4
   ItemPointType: 4

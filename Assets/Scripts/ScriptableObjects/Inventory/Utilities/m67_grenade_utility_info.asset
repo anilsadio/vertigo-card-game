@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemType: 2
   ItemName: M67
-  ItemKey: m67_grenade_utility
   <Icons>k__BackingField:
   - IconType: 0
     Icon: {fileID: 21300000, guid: 3a1d16956e04173409a99794d8ee0c63, type: 3}
   - IconType: 1
     Icon: {fileID: 21300000, guid: 3a1d16956e04173409a99794d8ee0c63, type: 3}
   UtilityType: 1
+  UtilityName: 1
   Tier: 1
   UnlockLevel: 0
