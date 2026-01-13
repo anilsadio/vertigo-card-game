@@ -1,0 +1,535 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7ed5bce1e94f4048b65de77aab92791, type: 3}
+  m_Name: card_game_data
+  m_EditorClassIdentifier: 
+  StepList:
+  - Rewards:
+    - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 5
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 4
+    - Reward: {fileID: 11400000, guid: 0c954b21162d6164c834cca56e7c6662, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 3
+    - Reward: {fileID: 11400000, guid: 9254f8ba56b465f4bb20a6bd3e2946b1, type: 2}
+      Amount: 0
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 10
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 1
+  - Rewards:
+    - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 5
+    - Reward: {fileID: 11400000, guid: f61e173db73de2a4e9110bfd3859cfe2, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 0c954b21162d6164c834cca56e7c6662, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 3
+    - Reward: {fileID: 11400000, guid: 9254f8ba56b465f4bb20a6bd3e2946b1, type: 2}
+      Amount: 0
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 10
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 1
+  - Rewards:
+    - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 5
+    - Reward: {fileID: 11400000, guid: f61e173db73de2a4e9110bfd3859cfe2, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 0c954b21162d6164c834cca56e7c6662, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 3
+    - Reward: {fileID: 11400000, guid: 9254f8ba56b465f4bb20a6bd3e2946b1, type: 2}
+      Amount: 0
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 10
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 1
+  - Rewards:
+    - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 5
+    - Reward: {fileID: 11400000, guid: f61e173db73de2a4e9110bfd3859cfe2, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 0c954b21162d6164c834cca56e7c6662, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 3
+    - Reward: {fileID: 11400000, guid: 9254f8ba56b465f4bb20a6bd3e2946b1, type: 2}
+      Amount: 0
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 10
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 1
+  - Rewards:
+    - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 5
+    - Reward: {fileID: 11400000, guid: 33f2f1d1676aeea439e7ae07d7b332e0, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 0c954b21162d6164c834cca56e7c6662, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 3
+    - Reward: {fileID: 11400000, guid: 9254f8ba56b465f4bb20a6bd3e2946b1, type: 2}
+      Amount: 0
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 10
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 1
+  - Rewards:
+    - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 5
+    - Reward: {fileID: 11400000, guid: f61e173db73de2a4e9110bfd3859cfe2, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 0c954b21162d6164c834cca56e7c6662, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 3
+    - Reward: {fileID: 11400000, guid: 9254f8ba56b465f4bb20a6bd3e2946b1, type: 2}
+      Amount: 0
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 10
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 1
+  - Rewards:
+    - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 5
+    - Reward: {fileID: 11400000, guid: f61e173db73de2a4e9110bfd3859cfe2, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 0c954b21162d6164c834cca56e7c6662, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 3
+    - Reward: {fileID: 11400000, guid: 9254f8ba56b465f4bb20a6bd3e2946b1, type: 2}
+      Amount: 0
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 10
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 1
+  - Rewards:
+    - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 5
+    - Reward: {fileID: 11400000, guid: f61e173db73de2a4e9110bfd3859cfe2, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 0c954b21162d6164c834cca56e7c6662, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 3
+    - Reward: {fileID: 11400000, guid: 9254f8ba56b465f4bb20a6bd3e2946b1, type: 2}
+      Amount: 0
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 10
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 1
+  - Rewards:
+    - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 5
+    - Reward: {fileID: 11400000, guid: f61e173db73de2a4e9110bfd3859cfe2, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 0c954b21162d6164c834cca56e7c6662, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 3
+    - Reward: {fileID: 11400000, guid: 9254f8ba56b465f4bb20a6bd3e2946b1, type: 2}
+      Amount: 0
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 10
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 1
+  - Rewards:
+    - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 5
+    - Reward: {fileID: 11400000, guid: 029c1c9254a9e5442853669a6a8d882b, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 0c954b21162d6164c834cca56e7c6662, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 3
+    - Reward: {fileID: 11400000, guid: 9254f8ba56b465f4bb20a6bd3e2946b1, type: 2}
+      Amount: 0
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 10
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 1
+  - Rewards:
+    - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 5
+    - Reward: {fileID: 11400000, guid: f61e173db73de2a4e9110bfd3859cfe2, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 0c954b21162d6164c834cca56e7c6662, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 3
+    - Reward: {fileID: 11400000, guid: 9254f8ba56b465f4bb20a6bd3e2946b1, type: 2}
+      Amount: 0
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 10
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 1
+  - Rewards:
+    - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 5
+    - Reward: {fileID: 11400000, guid: f61e173db73de2a4e9110bfd3859cfe2, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 0c954b21162d6164c834cca56e7c6662, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 3
+    - Reward: {fileID: 11400000, guid: 9254f8ba56b465f4bb20a6bd3e2946b1, type: 2}
+      Amount: 0
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 10
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 1
+  - Rewards:
+    - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 5
+    - Reward: {fileID: 11400000, guid: f61e173db73de2a4e9110bfd3859cfe2, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 0c954b21162d6164c834cca56e7c6662, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 3
+    - Reward: {fileID: 11400000, guid: 9254f8ba56b465f4bb20a6bd3e2946b1, type: 2}
+      Amount: 0
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 10
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 1
+  - Rewards:
+    - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 5
+    - Reward: {fileID: 11400000, guid: f61e173db73de2a4e9110bfd3859cfe2, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 0c954b21162d6164c834cca56e7c6662, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 3
+    - Reward: {fileID: 11400000, guid: 9254f8ba56b465f4bb20a6bd3e2946b1, type: 2}
+      Amount: 0
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 10
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 1
+  - Rewards:
+    - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 5
+    - Reward: {fileID: 11400000, guid: 8163ddbe5b1b44841a2ac090c4114b0c, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 0c954b21162d6164c834cca56e7c6662, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 3
+    - Reward: {fileID: 11400000, guid: 9254f8ba56b465f4bb20a6bd3e2946b1, type: 2}
+      Amount: 0
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 10
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 1
+  - Rewards:
+    - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 5
+    - Reward: {fileID: 11400000, guid: f61e173db73de2a4e9110bfd3859cfe2, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 0c954b21162d6164c834cca56e7c6662, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 3
+    - Reward: {fileID: 11400000, guid: 9254f8ba56b465f4bb20a6bd3e2946b1, type: 2}
+      Amount: 0
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 10
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 1
+  - Rewards:
+    - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 5
+    - Reward: {fileID: 11400000, guid: f61e173db73de2a4e9110bfd3859cfe2, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 0c954b21162d6164c834cca56e7c6662, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 3
+    - Reward: {fileID: 11400000, guid: 9254f8ba56b465f4bb20a6bd3e2946b1, type: 2}
+      Amount: 0
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 10
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 1
+  - Rewards:
+    - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 5
+    - Reward: {fileID: 11400000, guid: f61e173db73de2a4e9110bfd3859cfe2, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 0c954b21162d6164c834cca56e7c6662, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 3
+    - Reward: {fileID: 11400000, guid: 9254f8ba56b465f4bb20a6bd3e2946b1, type: 2}
+      Amount: 0
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 10
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 1
+  - Rewards:
+    - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 5
+    - Reward: {fileID: 11400000, guid: f61e173db73de2a4e9110bfd3859cfe2, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 0c954b21162d6164c834cca56e7c6662, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 3
+    - Reward: {fileID: 11400000, guid: 9254f8ba56b465f4bb20a6bd3e2946b1, type: 2}
+      Amount: 0
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 10
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 1
+  - Rewards:
+    - Reward: {fileID: 11400000, guid: 33f2f1d1676aeea439e7ae07d7b332e0, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 5
+    - Reward: {fileID: 11400000, guid: 83c99b7e3e8c145498592b06e381587b, type: 2}
+      Amount: 2
+    - Reward: {fileID: 11400000, guid: 0c954b21162d6164c834cca56e7c6662, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 3
+    - Reward: {fileID: 11400000, guid: 9254f8ba56b465f4bb20a6bd3e2946b1, type: 2}
+      Amount: 0
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 10
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 1
+  - Rewards:
+    - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 5
+    - Reward: {fileID: 11400000, guid: f61e173db73de2a4e9110bfd3859cfe2, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 0c954b21162d6164c834cca56e7c6662, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 3
+    - Reward: {fileID: 11400000, guid: 9254f8ba56b465f4bb20a6bd3e2946b1, type: 2}
+      Amount: 0
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 10
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 1
+  - Rewards:
+    - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 5
+    - Reward: {fileID: 11400000, guid: f61e173db73de2a4e9110bfd3859cfe2, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 0c954b21162d6164c834cca56e7c6662, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 3
+    - Reward: {fileID: 11400000, guid: 9254f8ba56b465f4bb20a6bd3e2946b1, type: 2}
+      Amount: 0
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 10
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 1
+  - Rewards:
+    - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 5
+    - Reward: {fileID: 11400000, guid: f61e173db73de2a4e9110bfd3859cfe2, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 0c954b21162d6164c834cca56e7c6662, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 3
+    - Reward: {fileID: 11400000, guid: 9254f8ba56b465f4bb20a6bd3e2946b1, type: 2}
+      Amount: 0
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 10
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 1
+  - Rewards:
+    - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 5
+    - Reward: {fileID: 11400000, guid: f61e173db73de2a4e9110bfd3859cfe2, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 0c954b21162d6164c834cca56e7c6662, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 3
+    - Reward: {fileID: 11400000, guid: 9254f8ba56b465f4bb20a6bd3e2946b1, type: 2}
+      Amount: 0
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 10
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 1
+  - Rewards:
+    - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 5
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 0c954b21162d6164c834cca56e7c6662, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 3
+    - Reward: {fileID: 11400000, guid: 9254f8ba56b465f4bb20a6bd3e2946b1, type: 2}
+      Amount: 0
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 10
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 1
+  - Rewards:
+    - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 5
+    - Reward: {fileID: 11400000, guid: f61e173db73de2a4e9110bfd3859cfe2, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 0c954b21162d6164c834cca56e7c6662, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 3
+    - Reward: {fileID: 11400000, guid: 9254f8ba56b465f4bb20a6bd3e2946b1, type: 2}
+      Amount: 0
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 10
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 1
+  - Rewards:
+    - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 5
+    - Reward: {fileID: 11400000, guid: f61e173db73de2a4e9110bfd3859cfe2, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 0c954b21162d6164c834cca56e7c6662, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 3
+    - Reward: {fileID: 11400000, guid: 9254f8ba56b465f4bb20a6bd3e2946b1, type: 2}
+      Amount: 0
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 10
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 1
+  - Rewards:
+    - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 5
+    - Reward: {fileID: 11400000, guid: f61e173db73de2a4e9110bfd3859cfe2, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 0c954b21162d6164c834cca56e7c6662, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 3
+    - Reward: {fileID: 11400000, guid: 9254f8ba56b465f4bb20a6bd3e2946b1, type: 2}
+      Amount: 0
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 10
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 1
+  - Rewards:
+    - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 5
+    - Reward: {fileID: 11400000, guid: f61e173db73de2a4e9110bfd3859cfe2, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 0c954b21162d6164c834cca56e7c6662, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 3
+    - Reward: {fileID: 11400000, guid: 9254f8ba56b465f4bb20a6bd3e2946b1, type: 2}
+      Amount: 0
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 10
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 1
+  - Rewards:
+    - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 5
+    - Reward: {fileID: 11400000, guid: 0c954b21162d6164c834cca56e7c6662, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 150
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 3
+    - Reward: {fileID: 11400000, guid: 9254f8ba56b465f4bb20a6bd3e2946b1, type: 2}
+      Amount: 0
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 10
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 1
+  WheelImageInfos:
+  - WheelImage: {fileID: 21300000, guid: f3041d683da1b7c488d5126bbbc7154b, type: 3}
+    CursorImage: {fileID: 21300000, guid: 273eb5100bf2f1a4eab453754fe1e78d, type: 3}
+    WheelType: 0
+  - WheelImage: {fileID: 21300000, guid: 8dd24b1ff2805c341bbba23c9c79ac6d, type: 3}
+    CursorImage: {fileID: 21300000, guid: c30c9dda49c47fb4aaad182cd9321e3f, type: 3}
+    WheelType: 1
+  - WheelImage: {fileID: 21300000, guid: eb24448486b249743b35b46e29a9849d, type: 3}
+    CursorImage: {fileID: 21300000, guid: 612070e898f9ea44a911cc11827eb5bb, type: 3}
+    WheelType: 0
