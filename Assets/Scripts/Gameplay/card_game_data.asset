@@ -25,11 +25,48 @@ MonoBehaviour:
     - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
       Amount: 3
     - Reward: {fileID: 11400000, guid: 9254f8ba56b465f4bb20a6bd3e2946b1, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 10
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 1
+    WheelType: 1
+  - Rewards:
+    - Reward: {fileID: 11400000, guid: 1fdecf0dfd695654988114c05ea48202, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 5
+    - Reward: {fileID: 11400000, guid: f61e173db73de2a4e9110bfd3859cfe2, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: b3398ae1d7dcda1499ed1783452c68e9, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 3
+    - Reward: {fileID: 11400000, guid: 9254f8ba56b465f4bb20a6bd3e2946b1, type: 2}
+      Amount: 2
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 10
+    - Reward: {fileID: 11400000, guid: d2d44cdb8c67875478cad44790a5bb4d, type: 2}
+      Amount: 1
+    WheelType: 0
+  - Rewards:
+    - Reward: {fileID: 11400000, guid: b4dcceb9019a5d64e891b6e6165d3985, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 6
+    - Reward: {fileID: 11400000, guid: 306eb3e633fc0444d99aa8f7170c1c71, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 3
+    - Reward: {fileID: 11400000, guid: 9254f8ba56b465f4bb20a6bd3e2946b1, type: 2}
       Amount: 0
     - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
       Amount: 10
     - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
       Amount: 1
+    - Reward: {fileID: 11400000, guid: f61e173db73de2a4e9110bfd3859cfe2, type: 2}
+      Amount: 1
+    WheelType: 0
   - Rewards:
     - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
       Amount: 1
@@ -47,40 +84,7 @@ MonoBehaviour:
       Amount: 10
     - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
       Amount: 1
-  - Rewards:
-    - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
-      Amount: 1
-    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
-      Amount: 5
-    - Reward: {fileID: 11400000, guid: f61e173db73de2a4e9110bfd3859cfe2, type: 2}
-      Amount: 1
-    - Reward: {fileID: 11400000, guid: 0c954b21162d6164c834cca56e7c6662, type: 2}
-      Amount: 1
-    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
-      Amount: 3
-    - Reward: {fileID: 11400000, guid: 9254f8ba56b465f4bb20a6bd3e2946b1, type: 2}
-      Amount: 0
-    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
-      Amount: 10
-    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
-      Amount: 1
-  - Rewards:
-    - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
-      Amount: 1
-    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
-      Amount: 5
-    - Reward: {fileID: 11400000, guid: f61e173db73de2a4e9110bfd3859cfe2, type: 2}
-      Amount: 1
-    - Reward: {fileID: 11400000, guid: 0c954b21162d6164c834cca56e7c6662, type: 2}
-      Amount: 1
-    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
-      Amount: 3
-    - Reward: {fileID: 11400000, guid: 9254f8ba56b465f4bb20a6bd3e2946b1, type: 2}
-      Amount: 0
-    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
-      Amount: 10
-    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
-      Amount: 1
+    WheelType: 0
   - Rewards:
     - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
       Amount: 1
@@ -98,6 +102,7 @@ MonoBehaviour:
       Amount: 10
     - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
       Amount: 1
+    WheelType: 1
   - Rewards:
     - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
       Amount: 1
@@ -115,6 +120,7 @@ MonoBehaviour:
       Amount: 10
     - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
       Amount: 1
+    WheelType: 0
   - Rewards:
     - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
       Amount: 1
@@ -132,6 +138,7 @@ MonoBehaviour:
       Amount: 10
     - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
       Amount: 1
+    WheelType: 0
   - Rewards:
     - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
       Amount: 1
@@ -149,6 +156,7 @@ MonoBehaviour:
       Amount: 10
     - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
       Amount: 1
+    WheelType: 0
   - Rewards:
     - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
       Amount: 1
@@ -156,7 +164,7 @@ MonoBehaviour:
       Amount: 5
     - Reward: {fileID: 11400000, guid: f61e173db73de2a4e9110bfd3859cfe2, type: 2}
       Amount: 1
-    - Reward: {fileID: 11400000, guid: 0c954b21162d6164c834cca56e7c6662, type: 2}
+    - Reward: {fileID: 11400000, guid: e5a94883b63c0f742858dc21acf2b292, type: 2}
       Amount: 1
     - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
       Amount: 3
@@ -166,6 +174,7 @@ MonoBehaviour:
       Amount: 10
     - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
       Amount: 1
+    WheelType: 0
   - Rewards:
     - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
       Amount: 1
@@ -178,11 +187,12 @@ MonoBehaviour:
     - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
       Amount: 3
     - Reward: {fileID: 11400000, guid: 9254f8ba56b465f4bb20a6bd3e2946b1, type: 2}
-      Amount: 0
+      Amount: 1
     - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
       Amount: 10
     - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
       Amount: 1
+    WheelType: 1
   - Rewards:
     - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
       Amount: 1
@@ -200,6 +210,7 @@ MonoBehaviour:
       Amount: 10
     - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
       Amount: 1
+    WheelType: 0
   - Rewards:
     - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
       Amount: 1
@@ -217,6 +228,7 @@ MonoBehaviour:
       Amount: 10
     - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
       Amount: 1
+    WheelType: 0
   - Rewards:
     - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
       Amount: 1
@@ -234,6 +246,7 @@ MonoBehaviour:
       Amount: 10
     - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
       Amount: 1
+    WheelType: 0
   - Rewards:
     - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
       Amount: 1
@@ -251,6 +264,7 @@ MonoBehaviour:
       Amount: 10
     - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
       Amount: 1
+    WheelType: 0
   - Rewards:
     - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
       Amount: 1
@@ -268,6 +282,7 @@ MonoBehaviour:
       Amount: 10
     - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
       Amount: 1
+    WheelType: 1
   - Rewards:
     - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
       Amount: 1
@@ -285,6 +300,7 @@ MonoBehaviour:
       Amount: 10
     - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
       Amount: 1
+    WheelType: 0
   - Rewards:
     - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
       Amount: 1
@@ -302,6 +318,7 @@ MonoBehaviour:
       Amount: 10
     - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
       Amount: 1
+    WheelType: 0
   - Rewards:
     - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
       Amount: 1
@@ -319,6 +336,7 @@ MonoBehaviour:
       Amount: 10
     - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
       Amount: 1
+    WheelType: 0
   - Rewards:
     - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
       Amount: 1
@@ -336,6 +354,7 @@ MonoBehaviour:
       Amount: 10
     - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
       Amount: 1
+    WheelType: 0
   - Rewards:
     - Reward: {fileID: 11400000, guid: 33f2f1d1676aeea439e7ae07d7b332e0, type: 2}
       Amount: 1
@@ -353,6 +372,7 @@ MonoBehaviour:
       Amount: 10
     - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
       Amount: 1
+    WheelType: 1
   - Rewards:
     - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
       Amount: 1
@@ -370,6 +390,7 @@ MonoBehaviour:
       Amount: 10
     - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
       Amount: 1
+    WheelType: 0
   - Rewards:
     - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
       Amount: 1
@@ -387,6 +408,7 @@ MonoBehaviour:
       Amount: 10
     - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
       Amount: 1
+    WheelType: 0
   - Rewards:
     - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
       Amount: 1
@@ -404,6 +426,7 @@ MonoBehaviour:
       Amount: 10
     - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
       Amount: 1
+    WheelType: 0
   - Rewards:
     - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
       Amount: 1
@@ -421,6 +444,7 @@ MonoBehaviour:
       Amount: 10
     - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
       Amount: 1
+    WheelType: 0
   - Rewards:
     - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
       Amount: 1
@@ -438,23 +462,7 @@ MonoBehaviour:
       Amount: 10
     - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
       Amount: 1
-  - Rewards:
-    - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
-      Amount: 1
-    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
-      Amount: 5
-    - Reward: {fileID: 11400000, guid: f61e173db73de2a4e9110bfd3859cfe2, type: 2}
-      Amount: 1
-    - Reward: {fileID: 11400000, guid: 0c954b21162d6164c834cca56e7c6662, type: 2}
-      Amount: 1
-    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
-      Amount: 3
-    - Reward: {fileID: 11400000, guid: 9254f8ba56b465f4bb20a6bd3e2946b1, type: 2}
-      Amount: 0
-    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
-      Amount: 10
-    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
-      Amount: 1
+    WheelType: 1
   - Rewards:
     - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
       Amount: 1
@@ -472,6 +480,7 @@ MonoBehaviour:
       Amount: 10
     - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
       Amount: 1
+    WheelType: 0
   - Rewards:
     - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
       Amount: 1
@@ -489,6 +498,7 @@ MonoBehaviour:
       Amount: 10
     - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
       Amount: 1
+    WheelType: 0
   - Rewards:
     - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
       Amount: 1
@@ -506,6 +516,25 @@ MonoBehaviour:
       Amount: 10
     - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
       Amount: 1
+    WheelType: 0
+  - Rewards:
+    - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 5
+    - Reward: {fileID: 11400000, guid: f61e173db73de2a4e9110bfd3859cfe2, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 0c954b21162d6164c834cca56e7c6662, type: 2}
+      Amount: 1
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 3
+    - Reward: {fileID: 11400000, guid: 9254f8ba56b465f4bb20a6bd3e2946b1, type: 2}
+      Amount: 0
+    - Reward: {fileID: 11400000, guid: 5beeb8190ca48774c94578da0ac979af, type: 2}
+      Amount: 10
+    - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
+      Amount: 1
+    WheelType: 0
   - Rewards:
     - Reward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
       Amount: 1
@@ -523,13 +552,17 @@ MonoBehaviour:
       Amount: 10
     - Reward: {fileID: 11400000, guid: 70e11c0a073edc44699959f68dbc0a65, type: 2}
       Amount: 1
+    WheelType: 2
   WheelImageInfos:
   - WheelImage: {fileID: 21300000, guid: f3041d683da1b7c488d5126bbbc7154b, type: 3}
     CursorImage: {fileID: 21300000, guid: 273eb5100bf2f1a4eab453754fe1e78d, type: 3}
     WheelType: 0
+    TextColor: {r: 0, g: 0, b: 0, a: 0}
   - WheelImage: {fileID: 21300000, guid: 8dd24b1ff2805c341bbba23c9c79ac6d, type: 3}
     CursorImage: {fileID: 21300000, guid: c30c9dda49c47fb4aaad182cd9321e3f, type: 3}
     WheelType: 1
+    TextColor: {r: 0, g: 0, b: 0, a: 0}
   - WheelImage: {fileID: 21300000, guid: eb24448486b249743b35b46e29a9849d, type: 3}
     CursorImage: {fileID: 21300000, guid: 612070e898f9ea44a911cc11827eb5bb, type: 3}
     WheelType: 0
+    TextColor: {r: 0, g: 0, b: 0, a: 0}
