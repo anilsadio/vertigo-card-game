@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Gameplay.Core;
 using Gameplay.Data;
@@ -14,10 +15,18 @@ namespace Gameplay.UI
         private void Start()
         {
             MainEventHandler.OnCardGameStarted += OnCardGameStarted;
-            MainEventHandler.OnSpinEnded += ShowRewardsAndMoveToList;
+            // MainEventHandler.OnSpinEnded += ShowRewardsAndMoveToList;
             spinButton.onClick.AddListener(StartSpin);
         }
-        
+
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                StartSpin();
+            }
+        }
+
         private void OnCardGameStarted(CardGameData gameData)
         {
             
@@ -25,17 +34,18 @@ namespace Gameplay.UI
 
         private void StartSpin()
         {
-            if (GameStatus.GameState == GameState.Playing)
+            if (GameStateHolder.GameState == GameState.Playing)
                 return;
 
-            GameStatus.GameState = GameState.Playing;
+            Debug.Log("Spin Started. GameState is " + GameStateHolder.GameState.ToString());
+            GameStateHolder.GameState = GameState.Playing;
             CardGameController.Instance.SetRandomRewardIndex();
-            MainEventHandler.OnSpinStarted?.Invoke(GameStatus.CardGameCurrentStep);
+            MainEventHandler.OnSpinStarted?.Invoke(GameStateHolder.CardGameRewardIndex);
         }
 
-        private void ShowRewardsAndMoveToList(int rewardIndex )
+        private void ShowRewardsAndMoveToList()
         {
-            // await movetoreward etc.
+            // await reward animations etc.
             CardGameController.Instance.ProceedStep();
         }
     }
