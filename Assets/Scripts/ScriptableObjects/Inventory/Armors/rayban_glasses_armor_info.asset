@@ -14,13 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemType: 3
   ItemName: Rayban Glasses
-  ItemKey: rayban_glasses_armor_info
+  InventoryItemConsumeType: 1
+  FallbackReward: {fileID: 11400000, guid: d9eca1a6d939fbc44bb97257f99fd9d4, type: 2}
   <Icons>k__BackingField:
   - IconType: 0
     Icon: {fileID: 21300000, guid: 4a94ab62202839c40ab717da4606d4bd, type: 3}
   - IconType: 1
     Icon: {fileID: 21300000, guid: 4a94ab62202839c40ab717da4606d4bd, type: 3}
+  ArmorName: 0
   Tier: 1
-  UnlockPointAmount: 0
+  UpdatePointAmount: 0
   UnlockLevel: 0
   ArmorType: 1

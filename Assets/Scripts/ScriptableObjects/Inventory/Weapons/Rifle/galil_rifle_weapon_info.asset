@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemType: 1
   ItemName: Galil
+  InventoryItemConsumeType: 1
+  FallbackReward: {fileID: 11400000, guid: 0c954b21162d6164c834cca56e7c6662, type: 2}
   <Icons>k__BackingField:
   - IconType: 0
     Icon: {fileID: 21300000, guid: f3dae2117680a5c45a588d4289b85c96, type: 3}
@@ -23,5 +25,5 @@ MonoBehaviour:
   WeaponType: 0
   WeaponName: 2
   Tier: 2
-  UnlockPoint: 0
+  UpdatePointAmount: 10
   UnlockLevel: 0

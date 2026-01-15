@@ -1,6 +1,9 @@
 using System.Collections.Generic;
 using Gameplay.Data.Interfaces;
+using Gameplay.Data.Rewards;
 using Gameplay.Data.Utils;
+using Newtonsoft.Json;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace Gameplay.Data.Inventory
@@ -27,7 +30,16 @@ namespace Gameplay.Data.Inventory
         public virtual InventoryItemID ID => itemType.ToID(ItemName);
         public InventoryItemType itemType;
         public string ItemName;
+        public InventoryItemConsumeType InventoryItemConsumeType;
         
+        [ShowIf(nameof(IsFallBackRewardNeeded))]
+        public Reward FallbackReward;//If the nonconsumable inventory item has been claimed before, you should convert the inventory item to that type of inventory item. 
+
         public abstract Sprite GetIcon(InventoryIconType iconType = InventoryIconType.GameIcon);
+
+        public virtual bool IsFallBackRewardNeeded()
+        {
+            return InventoryItemConsumeType == InventoryItemConsumeType.NonConsumable;;
+        }
     }
 }

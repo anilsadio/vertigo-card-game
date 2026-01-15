@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using Gameplay.Data.Interfaces;
-using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace Gameplay.Data.Inventory
@@ -9,7 +8,6 @@ namespace Gameplay.Data.Inventory
     [CreateAssetMenu(fileName = "InventoryItemCatalog", menuName = "Inventory/InventoryItemCatalog", order = 1)]
     internal class InventoryItemCatalog : SingletonScriptableObject<InventoryItemCatalog>
     {
-        [DrawWithUnity]
         [SerializeField] private List<BaseInventoryItemInfo> items;
         
         private Dictionary<InventoryItemID, BaseInventoryItemInfo> itemsDictionary;

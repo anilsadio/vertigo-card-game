@@ -9,6 +9,12 @@ namespace Gameplay.Data.Inventory
         Armor = 3,
         ItemPoint = 4
     }
+    public enum InventoryItemConsumeType
+    {
+        CountBased = 0,
+        NonConsumable = 1
+    }
+    
     public enum CurrencyType
     {
         Coin = 0,

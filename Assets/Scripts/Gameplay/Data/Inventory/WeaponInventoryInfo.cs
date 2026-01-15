@@ -15,7 +15,7 @@ namespace Gameplay.Data.Inventory
         public WeaponType WeaponType;
         public WeaponName WeaponName;
         public int Tier;
-        public int UnlockPoint;
+        public int UpdatePointAmount;
         public int UnlockLevel;
     }
 }

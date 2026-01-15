@@ -13,7 +13,7 @@ namespace Gameplay.Data.Inventory
         public override InventoryItemID ID => itemType.ToID(ArmorName);
         public ArmorName ArmorName;
         public int Tier;
-        public int UnlockPointAmount;
+        public int UpdatePointAmount;
         public int UnlockLevel;
         public ArmorType ArmorType;
     }
