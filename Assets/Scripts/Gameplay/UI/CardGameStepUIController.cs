@@ -6,6 +6,7 @@ using Gameplay.Core;
 using Gameplay.Data;
 using TMPro;
 using UnityEngine.UI;
+using Utilities.Pool;
 
 namespace Gameplay.UI
 {
@@ -15,30 +16,32 @@ namespace Gameplay.UI
         [SerializeField] private CardGamePanel cardGamePanel;
         [SerializeField] private RectTransform content; // HorizontalLayoutGroup olan
         [SerializeField] private RectTransform cursor; // Sabit imleç
-        [SerializeField] private TextMeshProUGUI stepIndexTextPrefab;
 
-        private List<TextMeshProUGUI> stepIndexTextList = new();
+        private List<TextMeshUIPoolObject> stepIndexTextList = new();
 
         private void Awake()
         {
             MainEventHandler.OnCardGameStarted += OnCardGameStarted;
             MainEventHandler.OnStepProceeded += OnStepProceeded;
+            MainEventHandler.OnCardGameCompleted += OnCardGameCompleted;
         }
 
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                MoveToIndexWithAnimation(GameStatus.CardGameRewardIndex).Forget();
-            }
+            // if (Input.GetKeyDown(KeyCode.Space))
+            // {
+            //     MoveToIndexWithAnimation(GameStatus.CardGameRewardIndex).Forget();
+            // }
         }
 
         private void OnCardGameStarted(CardGameData gameData)
         {
             for (int i = 0; i < gameData.StepList.Count; i++)
             {
-                stepIndexTextList.Add(Instantiate(stepIndexTextPrefab, content));
-                stepIndexTextList[i].text = (i + 1).ToString();
+                var stepText = PoolFactory.Instance.GetObject<TextMeshUIPoolObject>(ObjectType.StepText, content, Vector3.zero, Vector3.one);
+                stepIndexTextList.Add(stepText);
+                stepIndexTextList[i].SetText((i + 1).ToString());
+                stepIndexTextList[i].SetColor(gameData.GetWheelInfo(gameData.StepList[i].WheelType).TextColor);
             }
 
             Canvas.ForceUpdateCanvases();
@@ -46,11 +49,21 @@ namespace Gameplay.UI
             MoveToIndex(0).Forget();
         }
 
-        private void OnStepProceeded(List<StepRewardInfo> rewardList)
+        private void OnCardGameCompleted(bool isWin)
         {
-            if (GameStatus.CardGameRewardIndex < stepIndexTextList.Count - 1)
+            MainEventHandler.OnCardGameStarted += OnCardGameStarted;
+            MainEventHandler.OnStepProceeded += OnStepProceeded;
+            foreach (var text in stepIndexTextList)
             {
-                MoveToIndexWithAnimation(GameStatus.CardGameCurrentStep).Forget();
+                PoolFactory.Instance.ResetObject(text, false);
+            }
+        }
+
+        private void OnStepProceeded(CardGameData gameData)
+        {
+            if (GameStateHolder.CardGameRewardIndex < stepIndexTextList.Count - 1)
+            {
+                MoveToIndexWithAnimation(GameStateHolder.CardGameCurrentStep).Forget();
             }
         }
 
@@ -70,6 +83,7 @@ namespace Gameplay.UI
             await content.DOMoveX(newPos.x, MOVE_DURATION).SetEase(Ease.OutQuad).ToUniTask()
                 .AttachExternalCancellation(content.GetCancellationTokenOnDestroy());
         }
+
         private async UniTask MoveToIndex(int _index, float _moveDuration = 0.7f)
         {
             RectTransform target = content.GetChild(Mathf.Clamp(_index, 0, content.childCount - 1)) as RectTransform;
