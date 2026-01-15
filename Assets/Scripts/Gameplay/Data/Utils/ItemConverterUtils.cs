@@ -5,7 +5,7 @@ using Gameplay.Data.Inventory;
 
 namespace Gameplay.Data.Utils
 {
-    public static partial class ItemConverterUtils
+    public static class ItemConverterUtils
     {
         private static Dictionary<(int, string), InventoryItemID> inventoryItemIDs = new();
         public static InventoryItemID ToID(this InventoryItemType itemType, string hash = default)
