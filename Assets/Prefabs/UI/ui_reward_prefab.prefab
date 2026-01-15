@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3158053708730039747}
   - component: {fileID: 630767754976765873}
   m_Layer: 5
-  m_Name: reward_prefab
+  m_Name: ui_reward_prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34,10 +34,10 @@ RectTransform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &630767754976765873
 MonoBehaviour:
@@ -51,6 +51,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4f00a4b38ce080489952170294ec0a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Type>k__BackingField: 0
+  RewardType: 0
+  RectTransform: {fileID: 3158053708730039747}
   rewardIcon: {fileID: 222319625582079829}
   rewardAmountText: {fileID: 4709999150193845581}
 --- !u!1 &6476380341652535236
@@ -86,10 +89,10 @@ RectTransform:
   m_Father: {fileID: 3158053708730039747}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.13755465, y: 0.24000001}
-  m_AnchorMax: {x: 0.84000003, y: 0.8873655}
-  m_AnchoredPosition: {x: 0, y: 0.11820221}
-  m_SizeDelta: {x: 0.05550003, y: -0.8833008}
+  m_AnchorMin: {x: 0, y: 0.23333333}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6663944753484753161
 CanvasRenderer:
@@ -162,11 +165,11 @@ RectTransform:
   m_Father: {fileID: 3158053708730039747}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.19600001, y: 0.040000003}
-  m_AnchorMax: {x: 0.84000003, y: 0.2697885}
-  m_AnchoredPosition: {x: -0.20178223, y: 0.40000916}
-  m_SizeDelta: {x: 0.029224396, y: 0.3771019}
-  m_Pivot: {x: 0.5, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0.23333333}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &3058141772680326029
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -222,7 +225,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 10.4
   m_fontSizeBase: 5
   m_fontWeight: 400
   m_enableAutoSizing: 1
