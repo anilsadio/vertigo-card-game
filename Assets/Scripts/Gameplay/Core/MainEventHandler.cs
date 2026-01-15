@@ -10,8 +10,8 @@ namespace Gameplay.Core
         public static Action OnGameStarted;
         public static Action<CardGameData> OnCardGameStarted;
         public static Action<int> OnSpinStarted;
-        public static Action<int> OnSpinEnded;
-        public static Action<List<StepRewardInfo>> OnStepProceeded;
+        public static Action OnSpinEnded;
+        public static Action<CardGameData> OnStepProceeded;
         public static Action<bool> OnCardGameCompleted;
     }
 }
