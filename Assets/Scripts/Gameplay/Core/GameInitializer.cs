@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using Gameplay.Data;
 using Gameplay.Data.Inventory;
+using Gameplay.Data.Inventory.InventorySaveSystem;
 using UnityEngine;
 
 namespace Gameplay.Core
@@ -18,7 +19,13 @@ namespace Gameplay.Core
         private void InitializeGame()
         {
             _ = InventoryItemCatalog.instance;
-            GameStatus.GameState = GameState.Started;
+            InventoryService.InitializeInventory();
+            StartCardGame();
+        }
+        
+        private void StartCardGame()
+        {
+            GameStateHolder.GameState = GameState.Started;
             MainEventHandler.OnGameStarted?.Invoke();
             cardGameController.Initialize();
         }
