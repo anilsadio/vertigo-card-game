@@ -6,87 +6,117 @@ using Gameplay.Core;
 using Gameplay.Data;
 using Gameplay.Data.Inventory;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Gameplay.UI
 {
     public class WheelUIController : MonoBehaviour
     {
         [SerializeField] private List<RewardUIItem> rewardItems = new();
-        
-        [Header("References")]
-        [SerializeField] private RectTransform wheelTransform;
 
-        [Header("Wheel Settings")]
-        [SerializeField] private const int SLOT_COUNT = 8;
-        [SerializeField] private const float SPIN_DURATION = 4f;
-        [SerializeField] private const int SPIN_AMOUNT = 3; // 2 sabit + 1 yavaş
+        [Header("References")] [SerializeField]
+        private Image wheelImage;
+
+        [SerializeField] private Image cursorImage;
+
+        [Header("Wheel Settings")] [SerializeField]
+        private const int SLOT_COUNT = 8;
+
+        private const float SPIN_DURATION = 3f;
+        private const int SPIN_AMOUNT = 3; // 2 fast + 1 slowing rotation
 
         private Tween spinTween;
-        private WheelType wheelType;
+        private WheelType wheelType = WheelType.Bronze;
 
         private void Awake()
         {
-            MainEventHandler.OnCardGameStarted += InitializeRewards;
+            MainEventHandler.OnCardGameStarted += Initialize;
             MainEventHandler.OnSpinStarted += OnSpinStarted;
-            MainEventHandler.OnStepProceeded += OnPassedNextStep;
+            MainEventHandler.OnStepProceeded += OnStepProceeded;
         }
 
-        private void InitializeRewards(CardGameData gameData)
+        private void Initialize(CardGameData gameData)
         {
             var i = 0;
-            foreach (var reward in gameData.StepList[GameStatus.CardGameCurrentStep].Rewards)
+            SetWheelType(gameData);
+
+            foreach (var stepRewardsInfo in gameData.StepList[GameStateHolder.CardGameCurrentStep].Rewards)
             {
-                if (reward.Reward.GetInventoryInfo() != null)
+                if (stepRewardsInfo.Reward.GetInventoryInfo() != null)
                 {
-                    rewardItems[i].Initialize(reward.Reward.GetInventoryInfo().GetIcon(), $"x{reward.Amount}");
+                    rewardItems[i].Initialize(stepRewardsInfo.Reward.GetInventoryInfo().GetIcon(),
+                        $"x{stepRewardsInfo.Amount}", stepRewardsInfo.Reward.RewardType);
                 }
 
                 i++;
             }
         }
-        
-        private void OnPassedNextStep(List<StepRewardInfo> rewardList)
+
+        private void OnStepProceeded(CardGameData gameData)
         {
             var i = 0;
-            foreach (var reward in rewardList)
+
+            //Animate and wait animation
+
+            wheelImage.rectTransform.DORotate(new Vector3(0, 0, 0), 0);
+            SetWheelType(gameData);
+
+            foreach (var stepRewardsInfo in gameData.StepList[GameStateHolder.CardGameCurrentStep].Rewards)
             {
-                if (reward.Reward.GetInventoryInfo() != null)
+                if (stepRewardsInfo.Reward.GetInventoryInfo() != null)
                 {
-                    rewardItems[i].Initialize(reward.Reward.GetInventoryInfo().GetIcon(), $"x{reward.Amount}");
+                    rewardItems[i].Initialize(stepRewardsInfo.Reward.GetInventoryInfo().GetIcon(),
+                        $"x{stepRewardsInfo.Amount}", stepRewardsInfo.Reward.RewardType);
                 }
 
                 i++;
             }
         }
-        
+
+
         private async void OnSpinStarted(int rewardIndex)
         {
             Debug.Log("Spin Started");
-            
-            spinTween?.Kill();
+
+            float startAngle = wheelImage.rectTransform.eulerAngles.z;
 
             float anglePerSlot = 360f / SLOT_COUNT;
             float targetAngle = rewardIndex * anglePerSlot;
-            
-            float finalRotation =
-                (SPIN_AMOUNT * 360f) +
-                (360f - targetAngle);
 
-            spinTween = wheelTransform.DORotate(
-                    new Vector3(0, 0, -finalRotation),
-                    SPIN_DURATION,
-                    RotateMode.FastBeyond360
-                ).SetEase(Ease.OutCubic);
+            float finalRotation = 360f - targetAngle;
+
+            float targetRotation = (360f * SPIN_AMOUNT) + finalRotation;
+            Debug.Log("Chosen reward: " + CardGameController.Instance.GameData
+                .StepList[GameStateHolder.CardGameCurrentStep].Rewards[rewardIndex].Reward.ID.hash);
+
+            spinTween = wheelImage.rectTransform.DORotate(new Vector3(0, 0, -(startAngle + targetRotation)),
+                    SPIN_DURATION, RotateMode.FastBeyond360)
+                .SetEase(Ease.OutCubic);
 
             await spinTween.AwaitForComplete(cancellationToken: this.GetCancellationTokenOnDestroy());
+
             OnSpinEnded();
         }
-        
+
         private void OnSpinEnded()
         {
             Debug.Log("Spin Ended");
+            spinTween?.Kill();
             spinTween = null;
             CardGameController.Instance.SpinEnded();
+        }
+
+
+        private void SetWheelType(CardGameData gameData)
+        {
+            if (wheelType == gameData.StepList[GameStateHolder.CardGameCurrentStep].WheelType)
+                return;
+
+            //animate wheel type change
+            var wheelInfo = gameData.GetWheelInfo(gameData.StepList[GameStateHolder.CardGameCurrentStep].WheelType);
+            wheelImage.sprite = wheelInfo.WheelImage;
+            cursorImage.sprite = wheelInfo.CursorImage;
+            wheelType = gameData.StepList[GameStateHolder.CardGameCurrentStep].WheelType;
         }
     }
 }
