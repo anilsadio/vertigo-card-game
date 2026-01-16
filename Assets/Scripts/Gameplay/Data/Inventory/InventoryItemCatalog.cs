@@ -18,9 +18,9 @@ namespace Gameplay.Data.Inventory
                 if (itemsDictionary == null)
                 {
                     itemsDictionary = new();
-                    foreach (var item in items)
+                    foreach (var _item in items)
                     {
-                        itemsDictionary.Add(item.ID, item);
+                        itemsDictionary.Add(_item.ID, _item);
                     }
                 }
                 return itemsDictionary;

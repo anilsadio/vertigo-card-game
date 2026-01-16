@@ -30,6 +30,11 @@ namespace Gameplay.Data.Inventory.InventorySaveSystem
         {
             return runtimeInventoryData.GetValueOrDefault(itemID, 0);
         }
+
+        public static bool HasItem(InventoryItemID itemID)
+        {
+            return runtimeInventoryData.ContainsKey(itemID);
+        }
         
         public static void SaveInventoryData()
         {
