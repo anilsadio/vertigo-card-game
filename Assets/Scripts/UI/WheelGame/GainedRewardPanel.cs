@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using Gameplay.Core;
 using Gameplay.Data;
-using Gameplay.Data.Inventory;
 using Gameplay.Data.Rewards;
 using LiveEventService;
 using UI.RewardItems;
@@ -9,7 +8,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Utilities.Pool;
 
-namespace UI
+namespace UI.WheelGame
 {
     public class GainedRewardPanel : MonoBehaviour
     {

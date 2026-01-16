@@ -8,7 +8,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Utilities.Pool;
 
-namespace UI
+namespace UI.WheelGame
 {
     public class WheelGameStepUIController : MonoBehaviour
     {

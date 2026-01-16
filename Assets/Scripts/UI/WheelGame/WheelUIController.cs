@@ -8,7 +8,7 @@ using UI.RewardItems;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace UI
+namespace UI.WheelGame
 {
     public class WheelUIController : MonoBehaviour
     {

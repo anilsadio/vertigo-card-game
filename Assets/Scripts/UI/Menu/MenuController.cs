@@ -10,7 +10,6 @@ namespace UI.Menu
 {
     public class MenuController : SingletonBehaviour<MenuController>
     {
-        public Transform PanelCanvas;
         public RectTransform ButtonsLeftLayout;
         private List<BaseMenuButton> MenuButtons = new();
         [SerializeField] private WheelGamePanel wheelGamePanel;
