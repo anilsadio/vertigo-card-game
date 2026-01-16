@@ -119,8 +119,6 @@ namespace UI.WheelGame
             }
 
             LiveEvent.ProceedStep();
-
-            
         }
 
         private bool TryGetRewardUIItem(Reward reward, int amount, out RewardUIItem result)

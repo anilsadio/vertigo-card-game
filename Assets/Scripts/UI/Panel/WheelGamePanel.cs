@@ -34,14 +34,6 @@ namespace UI.Panel
         [SerializeField] private BombFailPanel bombFailPanel;
         [SerializeField] private Button spinButton;
 
-        private void Update()
-        {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                StartSpin();
-            }
-        }
-
         public void Initialize()
         {
             MainEventHandler.OnWheelGameCompleted += OnWheelGameCompleted;
@@ -53,6 +45,17 @@ namespace UI.Panel
             spinButton.onClick.AddListener(StartSpin);
             MainEventHandler.OnWheelGameStarted?.Invoke(eventData);
         }
+
+#if UNITY_EDITOR
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                StartSpin();
+            }
+        }
+#endif
+        
 
         private void OnWheelGameCompleted(bool isWin)
         {

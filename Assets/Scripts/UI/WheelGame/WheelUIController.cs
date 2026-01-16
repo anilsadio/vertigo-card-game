@@ -43,6 +43,7 @@ namespace UI.WheelGame
         {
             MainEventHandler.OnWheelGameStarted += OnWheelGameStarted;
             MainEventHandler.OnSpinStarted += OnSpinStarted;
+            MainEventHandler.OnSpinEnded += OnSpinEnded;
             MainEventHandler.OnStepProceeded += OnStepProceeded;
             MainEventHandler.OnWheelGameCompleted += OnWheelGameCompleted;
         }
@@ -58,9 +59,19 @@ namespace UI.WheelGame
                 {
                     rewardItems[i].Initialize(stepRewardsInfo.Reward.GetInventoryInfo().GetIcon(),
                         $"x{stepRewardsInfo.Amount}", stepRewardsInfo.Reward.RewardType);
+                    rewardItems[i].transform.DOKill();
+                    rewardItems[i].transform.DOScale(Vector3.one, 0.2f);
                 }
 
                 i++;
+            }
+        }
+
+        private void OnSpinEnded(RectTransform rectTransform)
+        {
+            foreach (var item in rewardItems)
+            {
+                item.transform.DOScale(Vector3.zero, 0.2f).SetDelay(0.5f);
             }
         }
 
@@ -74,9 +85,7 @@ namespace UI.WheelGame
 
         private void OnStepProceeded(WheelGameLiveEventData eventData)
         {
-            var i = 0;
-
-            //Animate and wait animation
+            int i = 0;
 
             wheelImage.rectTransform.DORotate(new Vector3(0, 0, 0), 0);
             SetWheelType(eventData);
@@ -87,6 +96,8 @@ namespace UI.WheelGame
                 {
                     rewardItems[i].Initialize(stepRewardsInfo.Reward.GetInventoryInfo().GetIcon(),
                         $"x{stepRewardsInfo.Amount}", stepRewardsInfo.Reward.RewardType);
+                    rewardItems[i].transform.DOKill();
+                    rewardItems[i].transform.DOScale(Vector3.one, 0.2f);
                 }
 
                 i++;
