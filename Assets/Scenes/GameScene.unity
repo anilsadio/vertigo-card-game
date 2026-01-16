@@ -1550,7 +1550,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.000030517578, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &869097620
@@ -1840,7 +1840,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.34, y: 0.209}
   m_AnchorMax: {x: 0.66249996, y: 0.59300005}
-  m_AnchoredPosition: {x: -1, y: -0.5}
+  m_AnchoredPosition: {x: -1, y: -0.49998474}
   m_SizeDelta: {x: -2, y: -0.2230072}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1024581178
@@ -2405,6 +2405,7 @@ MonoBehaviour:
   - {fileID: 5680908649872155688, guid: a65826522fd2c0546a9c678021eb5226, type: 3}
   - {fileID: 2665431679691945872, guid: a5d8ff1c528d5d04fb93cfddb37441e3, type: 3}
   - {fileID: 8576591882685618769, guid: 0bd18223497e88d4da5d604861c24980, type: 3}
+  - {fileID: 3472116099783381914, guid: 8148e0b2e6cba884599dcee4e38c020d, type: 3}
   presets: []
   poolsOnInspector: []
 --- !u!1 &2082643781
@@ -2418,13 +2419,14 @@ GameObject:
   - component: {fileID: 2082643782}
   - component: {fileID: 2082643784}
   - component: {fileID: 2082643783}
+  - component: {fileID: 2082643785}
   m_Layer: 5
   m_Name: ui_panel_bomb_fail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2082643782
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2447,7 +2449,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.000030517578, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2082643783
@@ -2488,6 +2490,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2082643781}
   m_CullTransparentMesh: 1
+--- !u!114 &2082643785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2082643781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c3a3935c22b83942881d96a74cb6a5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  giveupButton: {fileID: 916162500}
+  reviveButton: {fileID: 1786948006}
 --- !u!1 &161519026454941698
 GameObject:
   m_ObjectHideFlags: 0
@@ -2807,6 +2823,7 @@ MonoBehaviour:
   wheelGameStepUIController: {fileID: 3524470151300391694}
   gainedRewardPanel: {fileID: 3524470151570599542}
   collectedRewardPanel: {fileID: 869097622}
+  bombFailPanel: {fileID: 2082643785}
   spinButton: {fileID: 3524470150279210796}
 --- !u!222 &3524470149962290837
 CanvasRenderer:
@@ -2829,7 +2846,7 @@ GameObject:
   - component: {fileID: 3524470149962290842}
   - component: {fileID: 3524470149962290836}
   m_Layer: 5
-  m_Name: ui_panel_wheel_game
+  m_Name: ui_panel_wheel_game_WheelGameUIController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6670,7 +6687,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.238, y: 0.045}
   m_AnchorMax: {x: 0.3276994, y: 0.88000005}
-  m_AnchoredPosition: {x: -1.8516846, y: 0.230896}
+  m_AnchoredPosition: {x: -1.8512573, y: 0.230896}
   m_SizeDelta: {x: 0.9312897, y: -2.4615216}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &3524470151603184268
