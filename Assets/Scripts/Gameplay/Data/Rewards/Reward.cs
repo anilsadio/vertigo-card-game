@@ -38,7 +38,7 @@ namespace Gameplay.Data.Rewards
                 rewardItem.Initialize(this);
                 rewardItem.transform.position = startTransform.position;
                 
-                Canvas.ForceUpdateCanvases();  
+                Canvas.ForceUpdateCanvases();
                 
                 Vector3 _startPos = startTransform.TransformPoint(targetTransform.rect.center);
                 Vector3 _targetPos = targetTransform.TransformPoint(targetTransform.rect.center);
