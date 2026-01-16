@@ -2,7 +2,12 @@
 
 Rather than treating the Wheel of Fortune mechanic as a core gameplay feature, I handled it as a live event within the game and built a live event system that allows creating many similar events.
 
-Things I wanted to implement but couldn’t due to time constraints of Case Study: an addressable asset system, a command queue structure (to control menus, pop-ups, and gameplay), and a scope structure (to ensure clean transitions between menu and gameplay without leaving any related remnants behind).”
+POTENTIAL IMPROVEMENTS 
+-Addressable asset system for memory management
+-Command queue structure (to control menus, pop-ups, and gameplay)
+-Scope structure (to ensure clean transitions between menu and gameplay without leaving any related remnants behind).
+-Editor tool for Wheel Of Fortune that fully populates the data and assigns progressively better rewards as the player advances.
+-Polishment and particle
 
 
 <img width="1245" height="740" alt="code-structure" src="https://github.com/user-attachments/assets/2014b239-319d-488a-8836-5e1f2e150201" />
