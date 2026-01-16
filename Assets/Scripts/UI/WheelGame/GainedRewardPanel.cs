@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Cysharp.Threading.Tasks;
 using Gameplay.Core;
 using Gameplay.Data;
 using Gameplay.Data.Rewards;
@@ -33,7 +34,6 @@ namespace UI.WheelGame
 
         public void Initialize()
         {
-            MainEventHandler.OnWheelGameCompleted += OnGameEnded;
             MainEventHandler.OnSpinEnded += OnSpinEnded;
             MainEventHandler.OnWheelGameStarted += OnWheelGameStarted;
             MainEventHandler.OnWheelGameCompleted += OnWheelGameCompleted;
@@ -55,7 +55,6 @@ namespace UI.WheelGame
 
         private void OnWheelGameCompleted(bool isWin)
         {
-            MainEventHandler.OnWheelGameCompleted -= OnGameEnded;
             MainEventHandler.OnSpinEnded -= OnSpinEnded;
             MainEventHandler.OnWheelGameStarted -= OnWheelGameStarted;
             MainEventHandler.OnWheelGameCompleted -= OnWheelGameCompleted;
@@ -74,16 +73,6 @@ namespace UI.WheelGame
             gainedRewards.Clear();
         }
 
-        private void OnGameStarted()
-        {
-            
-        }
-
-        private void OnGameEnded(bool isWin)
-        {
-            
-        }
-
         private void InitializeCollections()
         {
             if (gainedRewards == null)
@@ -97,13 +86,21 @@ namespace UI.WheelGame
                 gainedRewardUIItems.Clear();
         }
 
-        private async void OnSpinEnded()
+        private async void OnSpinEnded(RectTransform rewardTransform)
         {
             var _lastGainedReward = LiveEvent.GetLastGainedReward();
 
+            if (_lastGainedReward.Key.RewardType == RewardType.Bomb) 
+                return;
+            
             if (TryGetRewardUIItem(_lastGainedReward.Key, _lastGainedReward.Value, out var rewardUIItem))
             {
-                await rewardUIItem.SetAmountWithTween(gainedRewards[_lastGainedReward.Key.RewardType]);
+                await _lastGainedReward.Key.MoveRewardToTargetAnimation(Mathf.Clamp(_lastGainedReward.Value, 3, 15), rewardTransform, rewardUIItem.RectTransform, IncreaseText);
+                
+                void IncreaseText()
+                {
+                    rewardUIItem.SetAmountWithTween(gainedRewards[_lastGainedReward.Key.RewardType]).Forget();
+                }
             }
             else
             {
@@ -113,11 +110,17 @@ namespace UI.WheelGame
                 
                 gainedRewardUIItems.Add(rewardItem);
                 gainedRewards.Add(_lastGainedReward.Key.RewardType, _lastGainedReward.Value);
-                await rewardItem.SetAmountWithTween(gainedRewards[_lastGainedReward.Key.RewardType]);
+                await _lastGainedReward.Key.MoveRewardToTargetAnimation(Mathf.Clamp(_lastGainedReward.Value, 3, 15), rewardTransform, rewardItem.RectTransform, IncreaseText);
+                
+                void IncreaseText()
+                {
+                    rewardItem.SetAmountWithTween(gainedRewards[_lastGainedReward.Key.RewardType]).Forget();
+                }
             }
 
-            // await reward animations etc.
             LiveEvent.ProceedStep();
+
+            
         }
 
         private bool TryGetRewardUIItem(Reward reward, int amount, out RewardUIItem result)

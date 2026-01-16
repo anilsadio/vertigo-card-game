@@ -10,5 +10,6 @@ namespace Utilities.Pool
                 [InspectorName("Items/UI/Reward/WeaponCardRewardUIItem")] WeaponCardRewardUIItem = 3,
                 [InspectorName("Items/UI/Reward/ArmorCardRewardUIItem")] ArmorCardRewardUIItem = 4,
                 [InspectorName("Items/UI/LiveEvents/WheelGameMenuButton")] WheelGameMenuButton = 5,
+                [InspectorName("Items/UI/Reward/RewardAnimationItem")] RewardAnimationItem = 6,
         }
 }

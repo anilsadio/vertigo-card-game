@@ -19,7 +19,7 @@ namespace Gameplay.Data.Interfaces
             this.hash = hash;
         }
 
-        public override bool Equals(object other)
+        public bool Equals(object other)
         {
             if (other is InventoryItemID itemID)
             {
@@ -28,7 +28,7 @@ namespace Gameplay.Data.Interfaces
             return false;
         }
 
-        public override int GetHashCode()
+        public int GetHashCode()
         {
             return HashCode.Combine((int) type, hash);
         }

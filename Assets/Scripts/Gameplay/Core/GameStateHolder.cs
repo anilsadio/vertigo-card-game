@@ -13,6 +13,7 @@ namespace Gameplay.Core
         WheelGameStarted = 0,
         Playing = 1,
         Waiting = 2,
-        GameEnded = 3
+        BombExploded = 3,
+        GameEnded = 4
     }
 }

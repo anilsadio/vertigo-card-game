@@ -71,11 +71,11 @@ namespace Gameplay.Core
             MainEventHandler.OnWheelGameClosed -= OnWheelGameClosed;
         }
 
-        public void SpinEnded()
+        public void SpinEnded(RectTransform rewardTransform)
         {
             AddGainedReward();
             Debug.Log("Spin ended. Gained reward: " + lastGainedRewardInfo.Key.RewardType.ToString());
-            MainEventHandler.OnSpinEnded?.Invoke();
+            MainEventHandler.OnSpinEnded?.Invoke(rewardTransform);
         }
 
         private void AddGainedReward()
@@ -83,21 +83,35 @@ namespace Gameplay.Core
             BaseInventoryItemInfo _inventoryInfo = GetCurrentStepRewardInfo().Reward.GetInventoryInfo();
             if (_inventoryInfo != null)
             {
+                if (GetCurrentStepRewardInfo().Reward.RewardType == RewardType.Bomb)
+                {
+                    lastGainedRewardInfo = new KeyValuePair<Reward, int>(GetCurrentStepRewardInfo().Reward, GetCurrentStepRewardInfo().Amount);
+                    return;
+                }
+                
                 if (_inventoryInfo.InventoryItemConsumeType == InventoryItemConsumeType.NonConsumable)
                 {
                     if (InventoryService.HasItem(_inventoryInfo.ID) || GainedRewardsInventory.ContainsKey(_inventoryInfo))
                     {
-                        BaseInventoryItemInfo _fallbackInventoryInfo = _inventoryInfo.FallbackReward.GetInventoryInfo();
-                        if (GainedRewardsInventory.ContainsKey(_fallbackInventoryInfo))
+                        if (_inventoryInfo.FallbackReward != null)
                         {
-                            lastGainedRewardInfo = new KeyValuePair<Reward, int>(_inventoryInfo.FallbackReward, GetCurrentStepRewardInfo().Amount);
-                            GainedRewardsInventory[_fallbackInventoryInfo] += GetCurrentStepRewardInfo().Amount;
+                            BaseInventoryItemInfo _fallbackInventoryInfo = _inventoryInfo.FallbackReward.GetInventoryInfo();
+                            if (GainedRewardsInventory.ContainsKey(_fallbackInventoryInfo))
+                            {
+                                lastGainedRewardInfo = new KeyValuePair<Reward, int>(_inventoryInfo.FallbackReward, GetCurrentStepRewardInfo().Amount);
+                                GainedRewardsInventory[_fallbackInventoryInfo] += GetCurrentStepRewardInfo().Amount;
+                            }
+                            else
+                            {
+                                lastGainedRewardInfo = new KeyValuePair<Reward, int>(_inventoryInfo.FallbackReward, GetCurrentStepRewardInfo().Amount);
+                                GainedRewardsInventory.Add(_fallbackInventoryInfo, GetCurrentStepRewardInfo().Amount);
+                            }
                         }
                         else
                         {
-                            lastGainedRewardInfo = new KeyValuePair<Reward, int>(_inventoryInfo.FallbackReward, GetCurrentStepRewardInfo().Amount);
-                            GainedRewardsInventory.Add(_fallbackInventoryInfo, GetCurrentStepRewardInfo().Amount);
+                            Debug.LogError("Inventory info needs fallback rewards but it has not assigned: " + _inventoryInfo.ItemName);
                         }
+                        
                     }
                     else
                     {

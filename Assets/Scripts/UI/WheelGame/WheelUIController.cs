@@ -121,7 +121,7 @@ namespace UI.WheelGame
             Debug.Log("Spin Ended");
             spinTween?.Kill();
             spinTween = null;
-            LiveEvent.SpinEnded();
+            LiveEvent.SpinEnded(rewardItems[GameStateHolder.WheelGameRewardIndex].RectTransform);
         }
 
 

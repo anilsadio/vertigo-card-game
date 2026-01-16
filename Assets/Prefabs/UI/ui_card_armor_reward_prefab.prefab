@@ -67,11 +67,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 3d573f0036e638b48be3fdcf4601f9d8, type: 3}
-  m_Type: 1
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 1
+  m_FillAmount: 0.146
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -132,7 +132,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Type>k__BackingField: 4
-  RewardType: 0
   rewardIcon: {fileID: 3898222273433593100}
   rewardNameText: {fileID: 3179488751730057566}
   rewardAmountText: {fileID: 8381714857692409620}
