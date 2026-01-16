@@ -62,6 +62,7 @@ namespace Gameplay.Data
     [System.Serializable]
     public class Step
     {
+        //Holds array with 8 elements and shows warning box.
         [InfoBox("This array's element count must be 8.", InfoMessageType.Warning)]
         [ValidateInput(nameof(ValidateRewards))]
         public StepRewardInfo[] Rewards = new StepRewardInfo[8];

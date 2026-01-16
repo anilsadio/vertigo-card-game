@@ -44,6 +44,7 @@ namespace UI.Panel
             giveupButton.onClick.RemoveAllListeners();
             reviveButton.onClick.RemoveAllListeners();
             gameObject.SetActive(false);
+            GameStateHolder.GameState = GameState.Waiting;
             LiveEvent.ProceedStep();
         }
     }

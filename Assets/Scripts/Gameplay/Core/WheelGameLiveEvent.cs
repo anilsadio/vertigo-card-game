@@ -96,40 +96,23 @@ namespace Gameplay.Core
                         if (_inventoryInfo.FallbackReward != null)
                         {
                             BaseInventoryItemInfo _fallbackInventoryInfo = _inventoryInfo.FallbackReward.GetInventoryInfo();
-                            if (GainedRewardsInventory.ContainsKey(_fallbackInventoryInfo))
-                            {
-                                lastGainedRewardInfo = new KeyValuePair<Reward, int>(_inventoryInfo.FallbackReward, GetCurrentStepRewardInfo().Amount);
-                                GainedRewardsInventory[_fallbackInventoryInfo] += GetCurrentStepRewardInfo().Amount;
-                            }
-                            else
-                            {
-                                lastGainedRewardInfo = new KeyValuePair<Reward, int>(_inventoryInfo.FallbackReward, GetCurrentStepRewardInfo().Amount);
-                                GainedRewardsInventory.Add(_fallbackInventoryInfo, GetCurrentStepRewardInfo().Amount);
-                            }
+                            AddGainedInventoryInfo(_fallbackInventoryInfo, GetCurrentStepRewardInfo().Amount);
+                            lastGainedRewardInfo = new KeyValuePair<Reward, int>(_inventoryInfo.FallbackReward, GetCurrentStepRewardInfo().Amount);
                         }
                         else
                         {
                             Debug.LogError("Inventory info needs fallback rewards but it has not assigned: " + _inventoryInfo.ItemName);
                         }
-                        
                     }
                     else
                     {
                         lastGainedRewardInfo = new KeyValuePair<Reward, int>(GetCurrentStepRewardInfo().Reward, GetCurrentStepRewardInfo().Amount);
-                        GainedRewardsInventory.Add(_inventoryInfo, GetCurrentStepRewardInfo().Amount);
+                        AddGainedInventoryInfo(_inventoryInfo, GetCurrentStepRewardInfo().Amount);
                     }
                 }
                 else
                 {
-                    if (GainedRewardsInventory.ContainsKey(_inventoryInfo))
-                    {
-                        GainedRewardsInventory[_inventoryInfo] += GetCurrentStepRewardInfo().Amount;
-                    }
-                    else
-                    {
-                        GainedRewardsInventory.Add(_inventoryInfo, GetCurrentStepRewardInfo().Amount);
-                    }
-                    
+                    AddGainedInventoryInfo(_inventoryInfo, GetCurrentStepRewardInfo().Amount);
                     lastGainedRewardInfo = new KeyValuePair<Reward, int>(GetCurrentStepRewardInfo().Reward, GetCurrentStepRewardInfo().Amount);
                 }
             }
@@ -137,6 +120,18 @@ namespace Gameplay.Core
             {
                 Debug.LogError("Inventory info catalog does not contain this reward's inventory info: " +
                                GetCurrentStepRewardInfo().Reward.RewardType.ToString());
+            }
+        }
+
+        private void AddGainedInventoryInfo(BaseInventoryItemInfo info, int amount)
+        {
+            if (GainedRewardsInventory.ContainsKey(info))
+            {
+                GainedRewardsInventory[info] += amount ;
+            }
+            else
+            {
+                GainedRewardsInventory.Add(info, amount);
             }
         }
 

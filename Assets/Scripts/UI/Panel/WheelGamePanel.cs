@@ -73,7 +73,7 @@ namespace UI.Panel
 
         private void StartSpin()
         {
-            if (GameStateHolder.GameState == GameState.Playing || GameStateHolder.GameState == GameState.GameEnded)
+            if (GameStateHolder.GameState == GameState.Playing || GameStateHolder.GameState == GameState.GameEnded || GameStateHolder.GameState == GameState.BombExploded)
                 return;
 
             Debug.Log("Spin Started. GameState wass " + GameStateHolder.GameState.ToString());
@@ -89,6 +89,7 @@ namespace UI.Panel
             {
                 bombFailPanel.gameObject.SetActive(true);
                 bombFailPanel.Initialize();
+                GameStateHolder.GameState = GameState.BombExploded;
             }
                 
         }
