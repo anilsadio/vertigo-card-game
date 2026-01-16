@@ -2,6 +2,7 @@ using Gameplay.Data.Interfaces;
 using Gameplay.Data.Inventory;
 using Gameplay.Data.Utils;
 using UnityEngine;
+using Utilities.Pool;
 
 namespace Gameplay.Data.Rewards
 {
