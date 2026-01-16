@@ -1,4 +1,4 @@
-“In this case study, I can say that I focused mostly on the inventory system and tried to design a data structure with no limits, aligned with design patterns.
+In this case study, I can say that I focused mostly on the inventory system and tried to design a data structure with no limits, aligned with design patterns.
 
 Rather than treating the Wheel of Fortune mechanic as a core gameplay feature, I handled it as a live event within the game and built a live event system that allows creating many similar events.
 
