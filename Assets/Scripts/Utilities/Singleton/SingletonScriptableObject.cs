@@ -1,23 +1,27 @@
 ﻿using UnityEngine;
-/// <summary>
-/// Abstract class for making reload-proof singletons out of ScriptableObjects
-/// Returns the asset created on the editor, or null if there is none
-/// Based on https://www.youtube.com/watch?v=VBA1QCoEAX4
-/// </summary>
-/// <typeparam name="T">Singleton type</typeparam>
-public abstract class SingletonScriptableObject<T> : ScriptableObject where T : ScriptableObject {
-    static T _instance = null;
-    public static T instance
-    {
-        get
+
+namespace Utilities.Singleton
+{
+    /// <summary>
+    /// Abstract class for making reload-proof singletons out of ScriptableObjects
+    /// Returns the asset created on the editor, or null if there is none
+    /// Based on https://www.youtube.com/watch?v=VBA1QCoEAX4
+    /// </summary>
+    /// <typeparam name="T">Singleton type</typeparam>
+    public abstract class SingletonScriptableObject<T> : ScriptableObject where T : ScriptableObject {
+        static T _instance = null;
+        public static T instance
         {
-            if (!_instance)
+            get
             {
-                var st = typeof(T).ToString().Replace('.', '/');
-                Debug.Log(st);
-                _instance = Resources.Load<T>(typeof(T).ToString().Replace('.','/'));
+                if (!_instance)
+                {
+                    var st = typeof(T).ToString().Replace('.', '/');
+                    Debug.Log(st);
+                    _instance = Resources.Load<T>(typeof(T).ToString().Replace('.','/'));
+                }
+                return _instance;
             }
-            return _instance;
         }
     }
 }

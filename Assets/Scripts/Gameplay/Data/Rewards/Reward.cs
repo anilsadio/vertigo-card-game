@@ -1,15 +1,13 @@
 using System;
 using System.Collections.Generic;
 using Cysharp.Threading.Tasks;
-using DG.Tweening;
 using Gameplay.Data.Interfaces;
 using Gameplay.Data.Inventory;
-using Gameplay.Data.Utils;
 using UI.Menu;
 using UI.RewardItems;
 using UnityEngine;
+using Utilities;
 using Utilities.Pool;
-using Random = UnityEngine.Random;
 
 namespace Gameplay.Data.Rewards
 {

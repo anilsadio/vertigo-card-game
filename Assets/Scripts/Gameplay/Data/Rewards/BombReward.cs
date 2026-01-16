@@ -1,6 +1,5 @@
 using Gameplay.Data.Interfaces;
 using Gameplay.Data.Inventory;
-using Gameplay.Data.Utils;
 using UnityEngine;
 
 namespace Gameplay.Data.Rewards

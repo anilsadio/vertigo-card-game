@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using Gameplay.Data.Interfaces;
-using Gameplay.Data.Utils;
 using UnityEngine;
+using Utilities;
 
 namespace Gameplay.Data.Inventory
 {

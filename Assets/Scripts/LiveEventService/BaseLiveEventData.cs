@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Gameplay.Data
+namespace LiveEventService
 {
     public class BaseLiveEventData : ScriptableObject
     {

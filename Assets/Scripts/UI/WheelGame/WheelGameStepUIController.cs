@@ -3,9 +3,10 @@ using Cysharp.Threading.Tasks;
 using DG.Tweening;
 using Gameplay.Core;
 using Gameplay.Data;
-using Gameplay.Data.Utils;
+using LiveEventService;
 using UnityEngine;
 using UnityEngine.UI;
+using Utilities;
 using Utilities.Pool;
 
 namespace UI.WheelGame

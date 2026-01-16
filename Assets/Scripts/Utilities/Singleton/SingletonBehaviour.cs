@@ -5,7 +5,7 @@ using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace Game.Scripts.Utils
+namespace Utilities.Singleton
 {
     [AttributeUsage(AttributeTargets.Class)]
     public sealed class DontSearchOnResourcesAttribute : Attribute { }

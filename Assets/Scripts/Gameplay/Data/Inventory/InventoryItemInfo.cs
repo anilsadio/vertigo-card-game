@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using Gameplay.Data.Interfaces;
 using Gameplay.Data.Rewards;
-using Gameplay.Data.Utils;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using Utilities;
 using Utilities.Pool;
 
 namespace Gameplay.Data.Inventory

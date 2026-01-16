@@ -1,11 +1,8 @@
-using UnityEngine;
-using System.IO;
 using System;
-#if UNITY_EDITOR
-using UnityEditor;
-#endif
+using System.IO;
+using UnityEngine;
 
-namespace Game.Scripts.Utils
+namespace Utilities.Singleton
 {
     [AttributeUsage(AttributeTargets.Class)]
     public class ResourcePathAttribute : Attribute

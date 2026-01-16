@@ -4,9 +4,9 @@ using Gameplay.Data.Interfaces;
 using Gameplay.Data.Inventory;
 using UnityEngine;
 
-namespace Gameplay.Data.Utils
+namespace Utilities
 {
-    public static class CustomUtilities
+    public static class InventoryItemIDUtility
     {
         private static Dictionary<(int, string), InventoryItemID> inventoryItemIDs = new();
         public static InventoryItemID ToID(this InventoryItemType itemType, string hash = default)

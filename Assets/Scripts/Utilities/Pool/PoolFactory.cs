@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
-using Game.Scripts.Utils;
 using UnityEngine;
+using Utilities.Singleton;
 
 namespace Utilities.Pool
 {

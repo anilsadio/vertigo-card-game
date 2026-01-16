@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using Gameplay.Data.Interfaces;
 using UnityEngine;
+using Utilities.Singleton;
 
 namespace Gameplay.Data.Inventory
 {

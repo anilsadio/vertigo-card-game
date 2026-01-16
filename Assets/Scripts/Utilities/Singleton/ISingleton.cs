@@ -1,4 +1,7 @@
 
-public interface ISingleton
+namespace Utilities.Singleton
 {
+    public interface ISingleton
+    {
+    }
 }

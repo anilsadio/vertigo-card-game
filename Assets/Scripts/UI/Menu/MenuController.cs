@@ -1,10 +1,10 @@
 using System.Collections.Generic;
-using Game.Scripts.Utils;
 using Gameplay.Core;
 using LiveEventService;
 using UI.Panel;
 using UnityEngine;
 using Utilities.Pool;
+using Utilities.Singleton;
 
 namespace UI.Menu
 {

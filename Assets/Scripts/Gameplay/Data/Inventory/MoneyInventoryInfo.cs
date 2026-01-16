@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using Gameplay.Data.Interfaces;
-using Gameplay.Data.Utils;
 using UnityEngine;
+using Utilities;
 
-namespace Gameplay.Data.Inventory.Currency
+namespace Gameplay.Data.Inventory
 {
     [System.Serializable]
     [CreateAssetMenu(fileName = "money_info", menuName = "Inventory/Infos/MoneyInfo", order = 1)]

@@ -4,7 +4,7 @@ using Gameplay.Data.Rewards;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace Gameplay.Data
+namespace LiveEventService
 {
     [CreateAssetMenu(fileName = "wheel_game_live_event_config", menuName = "LiveEventSystem/WheelGame/Config", order = 0)]
     public class WheelGameLiveEventData : BaseLiveEventData

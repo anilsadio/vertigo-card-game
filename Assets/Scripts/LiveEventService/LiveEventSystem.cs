@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using Game.Scripts.Utils;
 using LiveEventService.Config;
 using UnityEngine;
+using Utilities.Singleton;
 
 namespace LiveEventService
 {

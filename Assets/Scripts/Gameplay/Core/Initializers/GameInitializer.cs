@@ -1,9 +1,9 @@
-using Game.Scripts.Utils;
 using Gameplay.Data.Inventory;
 using Gameplay.Data.Inventory.InventorySaveSystem;
 using LiveEventService;
 using UI.Menu;
 using UnityEngine;
+using Utilities.Singleton;
 
 namespace Gameplay.Core.Initializers
 {

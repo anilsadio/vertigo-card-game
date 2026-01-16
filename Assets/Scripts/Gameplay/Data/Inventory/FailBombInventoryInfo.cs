@@ -1,10 +1,9 @@
 using System.Collections.Generic;
 using Gameplay.Data.Interfaces;
-using Gameplay.Data.Inventory;
-using Gameplay.Data.Utils;
 using UnityEngine;
+using Utilities;
 
-namespace Gameplay.Data
+namespace Gameplay.Data.Inventory
 {
     [CreateAssetMenu(fileName = "fail_bomb_info", menuName = "Inventory/Infos/FailBombInfo", order = 1)]
     public class FailBombInventoryInfo : InventoryItemInfo<InventoryItemIcon>
