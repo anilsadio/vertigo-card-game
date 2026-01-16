@@ -15,6 +15,7 @@ MonoBehaviour:
   itemType: 1
   ItemName: Galil
   InventoryItemConsumeType: 1
+  CardUIItemType: 3
   FallbackReward: {fileID: 11400000, guid: 0c954b21162d6164c834cca56e7c6662, type: 2}
   <Icons>k__BackingField:
   - IconType: 0

@@ -15,6 +15,7 @@ MonoBehaviour:
   itemType: 1
   ItemName: Summer Vice Bayonet
   InventoryItemConsumeType: 1
+  CardUIItemType: 3
   FallbackReward: {fileID: 11400000, guid: c78832ff5379b564a93589f29b0f17d5, type: 2}
   <Icons>k__BackingField:
   - IconType: 0

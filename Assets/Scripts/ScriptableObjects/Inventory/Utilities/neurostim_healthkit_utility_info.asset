@@ -14,6 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemType: 2
   ItemName: Neurotism
+  InventoryItemConsumeType: 0
+  CardUIItemType: 2
+  FallbackReward: {fileID: 0}
   <Icons>k__BackingField:
   - IconType: 0
     Icon: {fileID: 21300000, guid: 230c71c9fba2cff41bf58143c9a4818a, type: 3}

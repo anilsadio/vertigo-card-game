@@ -15,6 +15,7 @@ MonoBehaviour:
   itemType: 1
   ItemName: AWM
   InventoryItemConsumeType: 1
+  CardUIItemType: 3
   FallbackReward: {fileID: 11400000, guid: d56b20718bfa1674cbbdd523eb3ec7a6, type: 2}
   <Icons>k__BackingField:
   - IconType: 0

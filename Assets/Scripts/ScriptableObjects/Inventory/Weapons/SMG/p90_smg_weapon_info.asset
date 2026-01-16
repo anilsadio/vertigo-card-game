@@ -15,6 +15,7 @@ MonoBehaviour:
   itemType: 1
   ItemName: P90
   InventoryItemConsumeType: 1
+  CardUIItemType: 3
   FallbackReward: {fileID: 11400000, guid: dce7876df6b700b429f46107600f5a21, type: 2}
   <Icons>k__BackingField:
   - IconType: 0

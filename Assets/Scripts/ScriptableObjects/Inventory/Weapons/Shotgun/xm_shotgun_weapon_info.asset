@@ -15,6 +15,7 @@ MonoBehaviour:
   itemType: 1
   ItemName: XM
   InventoryItemConsumeType: 1
+  CardUIItemType: 3
   FallbackReward: {fileID: 11400000, guid: b3398ae1d7dcda1499ed1783452c68e9, type: 2}
   <Icons>k__BackingField:
   - IconType: 0

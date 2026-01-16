@@ -14,6 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemType: -1
   ItemName: Bomb
+  InventoryItemConsumeType: 0
+  CardUIItemType: 2
+  FallbackReward: {fileID: 0}
   <Icons>k__BackingField:
   - IconType: 0
     Icon: {fileID: 21300000, guid: 323a93d96d9f0f94fb88ac7236803b64, type: 3}

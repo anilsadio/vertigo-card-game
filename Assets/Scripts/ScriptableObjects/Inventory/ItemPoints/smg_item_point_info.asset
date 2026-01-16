@@ -14,6 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemType: 4
   ItemName: SMG Points
+  InventoryItemConsumeType: 0
+  CardUIItemType: 2
+  FallbackReward: {fileID: 0}
   <Icons>k__BackingField:
   - IconType: 0
     Icon: {fileID: 21300000, guid: 24da1ba1a9fe22346967ae1bf910422a, type: 3}
