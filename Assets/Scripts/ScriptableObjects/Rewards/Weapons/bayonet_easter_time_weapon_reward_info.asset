@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fbf71097240ed8742be94393b42cc3d9, type: 3}
-  m_Name: bayonet_easter_timel_weapon_reward_info
+  m_Name: bayonet_easter_time_weapon_reward_info
   m_EditorClassIdentifier: 
   RewardType: 1007
   itemType: 1

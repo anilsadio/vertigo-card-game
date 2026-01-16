@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fbf71097240ed8742be94393b42cc3d9, type: 3}
-  m_Name: bayonet_summer_vicel_weapon_reward_info
+  m_Name: knife_weapon_reward_info
   m_EditorClassIdentifier: 
-  RewardType: 1005
+  RewardType: 1006
   itemType: 1
   <AnimationObjectType>k__BackingField: 6
   WeaponType: 5
-  WeaponName: 0
+  WeaponName: 1
