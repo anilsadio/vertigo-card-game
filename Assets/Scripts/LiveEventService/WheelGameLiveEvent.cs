@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Cysharp.Threading.Tasks;
 using Gameplay.Core;
 using Gameplay.Data;
 using Gameplay.Data.Inventory;
@@ -136,7 +137,7 @@ namespace LiveEventService
             }
         }
 
-        public void ProceedStep()
+        public async void ProceedStep()
         {
             GameStateHolder.WheelGameCurrentStep++;
 

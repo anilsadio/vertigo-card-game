@@ -117,6 +117,8 @@ namespace UI.WheelGame
                     rewardItem.SetAmountWithTween(gainedRewards[_lastGainedReward.Key.RewardType]).Forget();
                 }
             }
+            
+            await UniTask.WaitForSeconds(0.5f).AttachExternalCancellation(this.GetCancellationTokenOnDestroy());
 
             LiveEvent.ProceedStep();
         }

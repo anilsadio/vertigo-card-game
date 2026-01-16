@@ -46,17 +46,6 @@ namespace UI.Panel
             MainEventHandler.OnWheelGameStarted?.Invoke(eventData);
         }
 
-#if UNITY_EDITOR
-        private void Update()
-        {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                StartSpin();
-            }
-        }
-#endif
-        
-
         private void OnWheelGameCompleted(bool isWin)
         {
             MainEventHandler.OnWheelGameCompleted -= OnWheelGameCompleted;

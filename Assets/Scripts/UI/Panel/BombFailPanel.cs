@@ -1,3 +1,4 @@
+using Cysharp.Threading.Tasks;
 using Gameplay.Core;
 using LiveEventService;
 using UnityEngine;
@@ -39,7 +40,7 @@ namespace UI.Panel
             MainEventHandler.OnWheelGameClosed?.Invoke();
             MainEventHandler.OnMenuOpened?.Invoke();
         }       
-        private void OnReviveButtonClicked()
+        private async void OnReviveButtonClicked()
         {
             giveupButton.onClick.RemoveAllListeners();
             reviveButton.onClick.RemoveAllListeners();
