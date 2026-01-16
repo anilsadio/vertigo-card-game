@@ -71,6 +71,7 @@ FailBombPanel: Appears when the bomb chosen in Wheel of Fortune. You can revive 
 RECORDINGS
 
 20:9
+
 <img width="718" height="324" alt="20 9" src="https://github.com/user-attachments/assets/104f039a-0469-4616-9805-43abf4f51c07" />
 
 16:9 
