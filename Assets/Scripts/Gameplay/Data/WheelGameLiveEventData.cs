@@ -6,15 +6,15 @@ using UnityEngine;
 
 namespace Gameplay.Data
 {
-    [CreateAssetMenu(fileName = "card_game_data", menuName = "CardGame/Data", order = 0)]
-    public class CardGameData : ScriptableObject
+    [CreateAssetMenu(fileName = "wheel_game_live_event_config", menuName = "LiveEventSystem/WheelGame/Config", order = 0)]
+    public class WheelGameLiveEventData : BaseLiveEventData
     {
         //Shows the error box on inspector in case of silver and gold steps include bomb. It is an assistant on building data.
-        [InfoBox("Elements that are multiples of 5 cannot contain bombs. Check the elements.", InfoMessageType.Error, VisibleIf = nameof(ValidateSteps))]
-        [ListDrawerSettings(ShowFoldout = false, DraggableItems = false, ShowIndexLabels = true, AddCopiesLastElement = true)]
-        public List<Step> StepList = new List<Step>();
+        [field: InfoBox("Elements that are multiples of 5 cannot contain bombs. Check the elements.", InfoMessageType.Error, VisibleIf = nameof(ValidateSteps))]
+        [field: ListDrawerSettings(ShowFoldout = false, DraggableItems = false, ShowIndexLabels = true, AddCopiesLastElement = true)]
+        [field: SerializeField] public List<Step> StepList { get; private set; }
 
-        public List<WheelDisplayInfo> WheelImageInfos = new List<WheelDisplayInfo>();
+        [field: SerializeField] public List<WheelDisplayInfo> WheelImageInfos { get; private set; }
 
         public WheelDisplayInfo GetWheelInfo(WheelType wheelType)
         {
@@ -87,14 +87,22 @@ namespace Gameplay.Data
     public struct StepRewardInfo
     {
         public Reward Reward;
+        
+        [ShowIf(nameof(IsItemConsumable))]
         public int Amount;
-    }
+        //You can add fallback reward amount for nonconsumable items.
 
-    [System.Serializable]
-    public struct RewardInventoryInfo
-    {
-        public BaseInventoryItemInfo InventoryItemInfo;
-        public int Amount;
+        private bool IsItemConsumable()
+        {
+            var info = Reward.GetInventoryInfo();
+            if (info.InventoryItemConsumeType == InventoryItemConsumeType.NonConsumable)
+            {
+                Amount = 1;
+                return false;
+            }
+            
+            return true;
+        }
     }
 
     [System.Serializable]
