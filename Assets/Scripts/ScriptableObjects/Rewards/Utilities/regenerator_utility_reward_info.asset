@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RewardType: 3003
   itemType: 2
-  CardRewardType: 2
+  <AnimationObjectType>k__BackingField: 6
   UtilityType: 0
   UtilityName: 3

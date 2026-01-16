@@ -24,6 +24,6 @@ MonoBehaviour:
     Icon: {fileID: 21300000, guid: 4a94ab62202839c40ab717da4606d4bd, type: 3}
   ArmorName: 0
   Tier: 1
-  UpdatePointAmount: 0
+  UpdatePointAmount: 10
   UnlockLevel: 0
   ArmorType: 1

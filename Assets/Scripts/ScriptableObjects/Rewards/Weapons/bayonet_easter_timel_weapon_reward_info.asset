@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RewardType: 1007
   itemType: 1
-  CardRewardType: 3
+  <AnimationObjectType>k__BackingField: 6
   WeaponType: 5
   WeaponName: 7

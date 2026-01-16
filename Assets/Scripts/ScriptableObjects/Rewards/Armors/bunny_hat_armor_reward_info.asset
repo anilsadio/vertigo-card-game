@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RewardType: 4001
   itemType: 3
-  CardRewardType: 2
+  <AnimationObjectType>k__BackingField: 6
   ArmorType: 1
   ArmorName: 1
