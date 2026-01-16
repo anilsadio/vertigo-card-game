@@ -108,8 +108,8 @@ namespace Utilities.Pool
             ParticleSystem particle = GetObject(type, parent, position, Vector3.one).GameObject.GetComponent<ParticleSystem>();
             particle.Play(true);
 
-            var main = particle.main;
-            main.stopAction = ParticleSystemStopAction.Callback;
+            var _main = particle.main;
+            _main.stopAction = ParticleSystemStopAction.Callback;
 
             return particle;
         }
