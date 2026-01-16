@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RewardType: 1004
   itemType: 1
+  CardRewardType: 3
   WeaponType: 2
   WeaponName: 3

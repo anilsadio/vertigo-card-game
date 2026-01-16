@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RewardType: 3000
   itemType: 2
+  CardRewardType: 2
   UtilityType: 1
   UtilityName: 0

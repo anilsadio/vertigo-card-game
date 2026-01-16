@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RewardType: 2002
   itemType: 4
+  CardRewardType: 2
   ItemPointType: 2

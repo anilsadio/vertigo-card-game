@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: money_currency_reward_info
   m_EditorClassIdentifier: 
   RewardType: 1
+  itemType: 0
+  CardRewardType: 2
   CurrencyType: 1

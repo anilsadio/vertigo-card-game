@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RewardType: 4001
   itemType: 3
+  CardRewardType: 2
   ArmorType: 1
   ArmorName: 1
