@@ -35,8 +35,6 @@ namespace LiveEventService
         public Dictionary<BaseInventoryItemInfo, int> GainedRewardsInventory => gainedRewardsInventory;
     
         private KeyValuePair<Reward, int> lastGainedRewardInfo = new KeyValuePair<Reward, int>();
-        // [SerializeField] private WheelGamePanel WheelGamePanel;
-        // public CollectedRewardPanel CollectedRewardPanel;
 
 
         public override void Initialize()
@@ -56,13 +54,10 @@ namespace LiveEventService
 
                 InventoryService.SaveInventoryData();
             }
-        
-            // CollectedRewardPanel.gameObject.SetActive(true);
-            // CollectedRewardPanel.Initialize(GainedRewardsInventory);
 
             GameStateHolder.WheelGameCurrentStep = 0;
+            GameStateHolder.WheelGameRewardIndex = 0;
             lastGainedRewardInfo = new KeyValuePair<Reward, int>();
-            //Get CollectedRewardPanel
         
             MainEventHandler.OnWheelGameCompleted -= OnCardGameCompleted;
         }
@@ -70,6 +65,7 @@ namespace LiveEventService
         private void OnWheelGameClosed()
         {
             GainedRewardsInventory.Clear();
+            lastGainedRewardInfo = new KeyValuePair<Reward, int>();
             MainEventHandler.OnWheelGameClosed -= OnWheelGameClosed;
         }
 

@@ -39,6 +39,7 @@ namespace UI.RewardItems
             sequence.Join(transform.DOScale(Vector3.zero, 0.35f).SetDelay(0.5f).SetEase(Ease.InQuint));
             
             await sequence.ToUniTask(cancellationToken: this.GetCancellationTokenOnDestroy());
+            this.ResetObject();
         }
 
         public void OnSpawn()

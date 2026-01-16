@@ -48,11 +48,22 @@ namespace UI.WheelGame
             MainEventHandler.OnWheelGameCompleted += OnWheelGameCompleted;
         }
 
+        private void OnWheelGameCompleted(bool isWin)
+        {
+            MainEventHandler.OnWheelGameStarted -= OnWheelGameStarted;
+            MainEventHandler.OnSpinStarted -= OnSpinStarted;
+            MainEventHandler.OnSpinEnded -= OnSpinEnded;
+            MainEventHandler.OnStepProceeded -= OnStepProceeded;
+            MainEventHandler.OnWheelGameCompleted -= OnWheelGameCompleted;
+        }
+        
         private void OnWheelGameStarted(WheelGameLiveEventData gameData)
         {
             var i = 0;
             SetWheelType(gameData);
 
+            wheelImage.rectTransform.DORotate(new Vector3(0, 0, 0), 0);
+            
             foreach (var stepRewardsInfo in gameData.StepList[GameStateHolder.WheelGameCurrentStep].Rewards)
             {
                 if (stepRewardsInfo.Reward.GetInventoryInfo() != null)
@@ -74,14 +85,6 @@ namespace UI.WheelGame
                 item.transform.DOKill();
                 item.transform.DOScale(Vector3.zero, 0.2f).SetDelay(0.5f);
             }
-        }
-
-        private void OnWheelGameCompleted(bool isWin)
-        {
-            MainEventHandler.OnWheelGameStarted -= OnWheelGameStarted;
-            MainEventHandler.OnSpinStarted -= OnSpinStarted;
-            MainEventHandler.OnStepProceeded -= OnStepProceeded;
-            MainEventHandler.OnWheelGameCompleted -= OnWheelGameCompleted;
         }
 
         private void OnStepProceeded(WheelGameLiveEventData eventData)

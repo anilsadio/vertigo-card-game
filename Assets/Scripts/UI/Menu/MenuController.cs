@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Gameplay.Core;
 using LiveEventService;
@@ -13,12 +14,16 @@ namespace UI.Menu
         public RectTransform ButtonsLeftLayout;
         private List<BaseMenuButton> MenuButtons = new();
         [SerializeField] private WheelGamePanel wheelGamePanel;
-        [SerializeField] private CollectedRewardPanel collectedRewardPanel;
 
         public void Initialize()
         {
             OnMenuOpened();
             MainEventHandler.OnMenuOpened += OnMenuOpened;
+        }
+
+        private void OnDisable()
+        {
+            MainEventHandler.OnMenuOpened -= OnMenuOpened;
         }
 
         private void OnMenuOpened()

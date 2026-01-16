@@ -65,7 +65,7 @@ namespace UI.Panel
             if (GameStateHolder.GameState == GameState.Playing || GameStateHolder.GameState == GameState.GameEnded || GameStateHolder.GameState == GameState.BombExploded)
                 return;
 
-            Debug.Log("Spin Started. GameState wass " + GameStateHolder.GameState.ToString());
+            Debug.Log("Spin Started. GameState was " + GameStateHolder.GameState.ToString());
             GameStateHolder.GameState = GameState.Playing;
             LiveEvent.SetRandomRewardIndex();
             
