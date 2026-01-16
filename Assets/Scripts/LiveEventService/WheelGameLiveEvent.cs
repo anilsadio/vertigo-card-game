@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Gameplay.Core;
 using Gameplay.Data;
 using Gameplay.Data.Inventory;
 using Gameplay.Data.Inventory.InventorySaveSystem;
@@ -7,7 +8,7 @@ using Gameplay.Data.Rewards;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-namespace Gameplay.Core
+namespace LiveEventService
 {
     [Serializable]
     [CreateAssetMenu(fileName = "wheel_game_live_event_controller", menuName = "Live Event System/Wheel Game Controller", order = 1)]

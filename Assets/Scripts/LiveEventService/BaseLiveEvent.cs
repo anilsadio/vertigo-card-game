@@ -1,7 +1,7 @@
 using Gameplay.Data;
 using UnityEngine;
 
-namespace Gameplay.Core
+namespace LiveEventService
 {
     [System.Serializable]
     public abstract class BaseLiveEvent: ScriptableObject

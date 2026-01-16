@@ -1,13 +1,11 @@
-using System.Collections.Generic;
 using Game.Scripts.Utils;
-using Gameplay.Data;
 using Gameplay.Data.Inventory;
 using Gameplay.Data.Inventory.InventorySaveSystem;
 using LiveEventService;
 using UI.Menu;
 using UnityEngine;
 
-namespace Gameplay.Core
+namespace Gameplay.Core.Initializers
 {
     public class GameInitializer : SingletonBehaviour<GameInitializer>
     {
