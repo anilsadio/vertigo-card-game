@@ -18,9 +18,9 @@ namespace UI.RewardItems
             if (inventoryItemInfo is ArmorInventoryInfo  info)
             {
                 var totalInventoryAmount = InventoryService.GetAmountOfItem(info.ID);
-                rewardAmountText.text = totalInventoryAmount.ToString() + info.UpdatePointAmount.ToString();
+                rewardAmountText.text = totalInventoryAmount.ToString() + "/" + info.UpdatePointAmount.ToString();
                 var fillAmount = Mathf.Clamp((float)info.UpdatePointAmount / (float)totalInventoryAmount, 0f, 1f);
-                progressBar.DOFillAmount(fillAmount, 0);
+                progressBar.DOFillAmount(fillAmount, 0.5f);
                 updateCategoryIcon.sprite = info.FallbackReward.GetInventoryInfo().GetIcon();
             }
         }

@@ -1,5 +1,6 @@
 using Gameplay.Core;
 using Gameplay.Data;
+using Gameplay.Data.Rewards;
 using LiveEventService;
 using UI.WheelGame;
 using UnityEngine;
@@ -30,6 +31,7 @@ namespace UI.Panel
         [SerializeField] private WheelGameStepUIController wheelGameStepUIController;
         [SerializeField] private GainedRewardPanel gainedRewardPanel;
         [SerializeField] private CollectedRewardPanel collectedRewardPanel;
+        [SerializeField] private BombFailPanel bombFailPanel;
         [SerializeField] private Button spinButton;
 
         private void Update()
@@ -43,6 +45,8 @@ namespace UI.Panel
         public void Initialize()
         {
             MainEventHandler.OnWheelGameCompleted += OnWheelGameCompleted;
+            MainEventHandler.OnSpinEnded += OnSpinEnded;
+            
             wheelUIController.Initialize();
             wheelGameStepUIController.Initialize();
             gainedRewardPanel.Initialize();
@@ -53,6 +57,8 @@ namespace UI.Panel
         private void OnWheelGameCompleted(bool isWin)
         {
             MainEventHandler.OnWheelGameCompleted -= OnWheelGameCompleted;
+            MainEventHandler.OnSpinEnded -= OnSpinEnded;
+            
             spinButton.onClick.RemoveAllListeners();
             if (isWin)
             {
@@ -74,10 +80,14 @@ namespace UI.Panel
             MainEventHandler.OnSpinStarted?.Invoke(GameStateHolder.WheelGameRewardIndex);
         }
 
-        private void ShowRewardsAndMoveToList()
+        private void OnSpinEnded(Transform rewardTransform)
         {
-            // await reward animations etc.
-            LiveEvent.ProceedStep();
+            if (LiveEvent.GetLastGainedReward().Key.RewardType == RewardType.Bomb)
+            {
+                bombFailPanel.gameObject.SetActive(true);
+                bombFailPanel.Initialize();
+            }
+                
         }
     }
 }

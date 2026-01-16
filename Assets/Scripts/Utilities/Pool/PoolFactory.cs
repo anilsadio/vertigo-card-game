@@ -114,13 +114,6 @@ namespace Utilities.Pool
             return particle;
         }
         
-        // public UIParticleSystem GetUIParticleEffect(ObjectType type, Vector2 position, Transform parent = null)
-        // {
-        //     UIParticleSystem uiParticleSystem = GetObject(type, parent, position, Vector3.one).GameObject.GetComponent<UIParticleSystem>();
-        //     uiParticleSystem.StartParticleEmission();
-        //     return uiParticleSystem;
-        // }
-        
         #endregion
 
         #region Reset Methods

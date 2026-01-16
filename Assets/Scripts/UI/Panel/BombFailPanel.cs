@@ -1,18 +1,50 @@
-using System.Collections;
-using System.Collections.Generic;
+using Gameplay.Core;
+using LiveEventService;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class BombFailPanel : MonoBehaviour
+namespace UI.Panel
 {
-    // Start is called before the first frame update
-    void Start()
+    public class BombFailPanel : MonoBehaviour
     {
+        [SerializeField] private Button giveupButton;
+        [SerializeField] private Button reviveButton;
         
-    }
+        private WheelGameLiveEvent liveEvent;
+        private WheelGameLiveEvent LiveEvent
+        {
+            get
+            {
+                if (liveEvent == null)
+                {
+                    liveEvent = LiveEventSystem.Instance.GetLiveEvent<WheelGameLiveEvent>();
+                }
+                
+                return liveEvent;
+            }
+        }
 
-    // Update is called once per frame
-    void Update()
-    {
+        public void Initialize()
+        {
+            giveupButton.onClick.AddListener(OnGiveUpButtonClicked);
+            reviveButton.onClick.AddListener(OnReviveButtonClicked);
+        }
         
+        private void OnGiveUpButtonClicked()
+        {
+            giveupButton.onClick.RemoveAllListeners();
+            reviveButton.onClick.RemoveAllListeners();
+            gameObject.SetActive(false);
+            MainEventHandler.OnWheelGameCompleted?.Invoke(false);
+            MainEventHandler.OnWheelGameClosed?.Invoke();
+            MainEventHandler.OnMenuOpened?.Invoke();
+        }       
+        private void OnReviveButtonClicked()
+        {
+            giveupButton.onClick.RemoveAllListeners();
+            reviveButton.onClick.RemoveAllListeners();
+            gameObject.SetActive(false);
+            LiveEvent.ProceedStep();
+        }
     }
 }
