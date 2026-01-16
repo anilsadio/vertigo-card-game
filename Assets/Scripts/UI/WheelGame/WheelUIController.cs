@@ -72,7 +72,7 @@ namespace UI.WheelGame
             foreach (var item in rewardItems)
             {
                 item.transform.DOKill();
-                item.transform.DOScale(Vector3.zero, 0.2f).SetDelay(0.25f);
+                item.transform.DOScale(Vector3.zero, 0.2f).SetDelay(0.5f);
             }
         }
 

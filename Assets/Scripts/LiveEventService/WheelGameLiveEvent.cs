@@ -97,6 +97,7 @@ namespace LiveEventService
                     {
                         if (_inventoryInfo.FallbackReward != null)
                         {
+                            //If nonconsumable item already exists in inventory, fallback reward will be added.
                             BaseInventoryItemInfo _fallbackInventoryInfo = _inventoryInfo.FallbackReward.GetInventoryInfo();
                             AddGainedInventoryInfo(_fallbackInventoryInfo, GetCurrentStepRewardInfo().Amount);
                             lastGainedRewardInfo = new KeyValuePair<Reward, int>(_inventoryInfo.FallbackReward, GetCurrentStepRewardInfo().Amount);
