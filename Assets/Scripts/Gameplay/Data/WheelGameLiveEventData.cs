@@ -20,8 +20,7 @@ namespace Gameplay.Data
         {
             return WheelImageInfos.Find(target => target.WheelType == wheelType);
         }
-
-#if UNITY_EDITOR
+        
         private bool ValidateSteps()
         {
             for (int i = 0; i <= StepList.Count; i += 5)
@@ -58,7 +57,6 @@ namespace Gameplay.Data
 
             return false;
         }
-#endif
     }
 
     [System.Serializable]
@@ -70,7 +68,6 @@ namespace Gameplay.Data
 
         public WheelType WheelType;
 
-#if UNITY_EDITOR
         private bool ValidateRewards(StepRewardInfo[] value)
         {
             if (Rewards is not { Length: 8 })
@@ -80,7 +77,6 @@ namespace Gameplay.Data
 
             return value is { Length: 8 };
         }
-#endif
     }
 
     [System.Serializable]

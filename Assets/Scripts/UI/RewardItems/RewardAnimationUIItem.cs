@@ -30,7 +30,7 @@ namespace UI.RewardItems
             transform.localScale = Vector3.zero;
             
             Vector2 randomPos = Random.insideUnitCircle;
-            Vector2 randomPosition = new(randomPos.x * Random.Range(-50f, 50f), randomPos.y * Random.Range(-50f, 50f));
+            Vector2 randomPosition = new(randomPos.x * Random.Range(-100f, 100f), randomPos.y * Random.Range(-100f, 100f));
             transform.position = startPosition + new Vector3(randomPosition.x, randomPosition.y, 0);
             
             sequence.AppendInterval(Random.Range(0.1f, 0.3f));

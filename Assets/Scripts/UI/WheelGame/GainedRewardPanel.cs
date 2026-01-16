@@ -95,7 +95,7 @@ namespace UI.WheelGame
             
             if (TryGetRewardUIItem(_lastGainedReward.Key, _lastGainedReward.Value, out var rewardUIItem))
             {
-                await _lastGainedReward.Key.MoveRewardToTargetAnimation(Mathf.Clamp(_lastGainedReward.Value, 3, 15), rewardTransform, rewardUIItem.RectTransform, IncreaseText);
+                await _lastGainedReward.Key.MoveRewardToTargetAnimation(Mathf.Clamp(_lastGainedReward.Value, 1, 15), rewardTransform, rewardUIItem.RectTransform, IncreaseText);
                 
                 void IncreaseText()
                 {
@@ -110,7 +110,7 @@ namespace UI.WheelGame
                 
                 gainedRewardUIItems.Add(rewardItem);
                 gainedRewards.Add(_lastGainedReward.Key.RewardType, _lastGainedReward.Value);
-                await _lastGainedReward.Key.MoveRewardToTargetAnimation(Mathf.Clamp(_lastGainedReward.Value, 3, 15), rewardTransform, rewardItem.RectTransform, IncreaseText);
+                await _lastGainedReward.Key.MoveRewardToTargetAnimation(Mathf.Clamp(_lastGainedReward.Value, 1, 15), rewardTransform, rewardItem.RectTransform, IncreaseText);
                 
                 void IncreaseText()
                 {

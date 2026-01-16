@@ -19,7 +19,7 @@ namespace UI.RewardItems
             {
                 var totalInventoryAmount = InventoryService.GetAmountOfItem(info.ID);
                 rewardAmountText.text = totalInventoryAmount.ToString() + "/" + info.UpdatePointAmount.ToString();
-                var fillAmount = Mathf.Clamp((float)info.UpdatePointAmount / (float)totalInventoryAmount, 0f, 1f);
+                var fillAmount = Mathf.Clamp((float)totalInventoryAmount / (float)info.UpdatePointAmount, 0f, 1f);
                 progressBar.DOFillAmount(fillAmount, 0.5f);
                 updateCategoryIcon.sprite = info.FallbackReward.GetInventoryInfo().GetIcon();
             }
